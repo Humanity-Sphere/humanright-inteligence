@@ -1,0 +1,137 @@
+import { GoogleGenerativeAI, HarmCategory, HarmBlockThreshold } from "@google/generative-ai";
+
+interface ContentGenerationParams {
+  title: string;
+  type: string;
+  tone: string;
+  instructions?: string;
+  dataSources?: string[];
+}
+
+// Initialisierung der Google Generative AI
+const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || "");
+
+// Sicherheitseinstellungen
+const safetySettings = [
+  {
+    category: HarmCategory.HARM_CATEGORY_HARASSMENT,
+    threshold: HarmBlockThreshold.BLOCK_MEDIUM_AND_ABOVE,
+  },
+  {
+    category: HarmCategory.HARM_CATEGORY_HATE_SPEECH,
+    threshold: HarmBlockThreshold.BLOCK_MEDIUM_AND_ABOVE,
+  },
+  {
+    category: HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT,
+    threshold: HarmBlockThreshold.BLOCK_MEDIUM_AND_ABOVE,
+  },
+  {
+    category: HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT,
+    threshold: HarmBlockThreshold.BLOCK_MEDIUM_AND_ABOVE,
+  },
+];
+
+export async function generateContent(params: ContentGenerationParams): Promise<string> {
+  try {
+    const { title, type, tone, instructions, dataSources } = params;
+
+    // Prompt basierend auf dem Inhaltstyp vorbereiten
+    let prompt = `Generiere einen ${tone} ${type} mit dem Titel "${title}".`;
+    
+    if (dataSources && dataSources.length > 0) {
+      prompt += ` Verwende folgende Datenquellen als Referenz: ${dataSources.join(", ")}.`;
+    }
+    
+    if (instructions) {
+      prompt += ` Zusätzliche Anweisungen: ${instructions}`;
+    }
+
+    // Inhalt basierend auf Typ erstellen
+    switch (type.toLowerCase()) {
+      case "report":
+        prompt += " Füge eine Zusammenfassung, wichtige Erkenntnisse, Methodik, Analyse und Empfehlungen ein.";
+        break;
+      case "social media":
+        prompt += " Erstelle prägnante, ansprechende Beiträge für Social-Media-Plattformen mit passenden Hashtags.";
+        break;
+      case "press release":
+        prompt += " Formatiere als professionelle Pressemitteilung mit Überschrift, Datumsstempel, Einleitung, Zitaten und Kontaktinformationen.";
+        break;
+      case "legal document":
+        prompt += " Strukturiere mit formaler Rechtssprache, einschließlich Verweisen auf relevante Gesetze und Präzedenzfälle.";
+        break;
+      default:
+        prompt += " Stelle sicher, dass der Inhalt gut strukturiert, informativ und handlungsorientiert ist.";
+    }
+
+    // Gemini-Modell verwenden
+    const model = genAI.getGenerativeModel({ 
+      model: "gemini-1.5-pro",
+      safetySettings
+    });
+
+    const systemPrompt = "Du bist ein Experte für Inhaltserstellung im Bereich Menschenrechtsaktivismus. Du erstellst professionelle, genaue und wirkungsvolle Inhalte, die die Menschenwürde respektieren und Menschenrechtsprinzipien fördern.";
+    
+    const result = await model.generateContent([systemPrompt, prompt]);
+    const response = result.response;
+    const text = response.text();
+    
+    if (!text) {
+      throw new Error("Inhaltsgenerierung fehlgeschlagen");
+    }
+
+    return text;
+  } catch (error) {
+    console.error("Gemini API error:", error);
+    const errorMessage = error instanceof Error ? error.message : "Unbekannter Fehler";
+    throw new Error(`Inhaltsgenerierung fehlgeschlagen: ${errorMessage}`);
+  }
+}
+
+export async function analyzeDocument(text: string): Promise<{
+  topics: string[];
+  sentiment: string;
+  keyFindings: string[];
+  suggestedActions: string[];
+}> {
+  try {
+    // Gemini-Modell verwenden
+    const model = genAI.getGenerativeModel({ 
+      model: "gemini-1.5-pro",
+      safetySettings
+    });
+
+    const systemPrompt = "Du bist ein Experte in der Analyse von Menschenrechten. Analysiere das Dokument und extrahiere wichtige Informationen.";
+    const userPrompt = `Analysiere dieses Dokument und liefere: 1) Hauptthemen (als Array), 2) Allgemeine Stimmung, 3) Wichtige Erkenntnisse (als Array), 4) Empfohlene Maßnahmen (als Array). Antworte im JSON-Format mit den Feldern 'topics', 'sentiment', 'keyFindings' und 'suggestedActions'.\n\n${text}`;
+    
+    const result = await model.generateContent([systemPrompt, userPrompt]);
+    const response = result.response;
+    const responseText = response.text();
+    
+    try {
+      // Versuche, die Antwort als JSON zu parsen
+      const analysisContent = JSON.parse(responseText);
+      
+      return {
+        topics: analysisContent.topics || [],
+        sentiment: analysisContent.sentiment || "neutral",
+        keyFindings: analysisContent.keyFindings || [],
+        suggestedActions: analysisContent.suggestedActions || []
+      };
+    } catch (parseError) {
+      console.error("Failed to parse Gemini response as JSON:", parseError);
+      
+      // Fallback: Versuche, strukturierte Informationen aus Text zu extrahieren
+      return {
+        topics: ["Extraktion fehlgeschlagen"],
+        sentiment: "neutral",
+        keyFindings: ["JSON-Parsing fehlgeschlagen, bitte versuchen Sie es erneut"],
+        suggestedActions: ["Anfrage mit strukturierterem Format wiederholen"]
+      };
+    }
+  } catch (error) {
+    console.error("Gemini analysis error:", error);
+    const errorMessage = error instanceof Error ? error.message : "Unbekannter Fehler";
+    throw new Error(`Dokumentenanalyse fehlgeschlagen: ${errorMessage}`);
+  }
+}

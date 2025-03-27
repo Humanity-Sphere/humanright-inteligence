@@ -1,0 +1,830 @@
+*Thinking...*
+
+> Der Nutzer fragt nach einer detaillierteren Erläuterung der Uwazi-Integration. Uwazi ist eine Dokumentenmanagement-Plattform, die speziell für Menschenrechtsorganisationen entwickelt wurde. Ich werde nun eine umfassende Erklärung erstellen, wie Uwazi in die Menschenrechtsverteidiger-App integriert werden kann, einschließlich:
+> 
+> 1. Was Uwazi ist und welche Hauptfunktionen es bietet
+> 2. Wie die technische Integration aussehen würde
+> 3. Welche spezifischen Vorteile diese Integration für Menschenrechtsverteidiger bringt
+> 4. Praktische Anwendungsfälle und Workflows
+> 5. Implementierungsdetails und Code-Beispiele
+> 
+> Ich werde dabei fachlich korrekt auf die Besonderheiten von Uwazi eingehen und zeigen, wie die Integration mit unserer KI-gestützten App funktionieren würde.
+
+# Uwazi-Integration: Dokumentenmanagement für Menschenrechtsverteidiger
+
+## Was ist Uwazi?
+
+Uwazi ist eine spezialisierte Open-Source-Plattform für Dokumentenmanagement, die von [HURIDOCS](https://huridocs.org/) (Human Rights Information and Documentation Systems) entwickelt wurde. Sie wurde speziell für Menschenrechtsorganisationen konzipiert, um große Dokumentensammlungen zu organisieren, zu verwalten und zugänglich zu machen. 
+
+### Kernfunktionen von Uwazi:
+
+- **Flexibles Datenmodell**: Anpassbare Entitäten und Beziehungen für verschiedene Dokumenttypen
+- **Volltextsuche**: Leistungsstarke Suchfunktion über alle Dokumente
+- **Mehrsprachigkeit**: Unterstützung für mehrsprachige Dokumente und Schnittstellen
+- **Metadaten-Management**: Umfangreiche Möglichkeiten zur Kategorisierung und Verschlagwortung
+- **Dokumentenanalyse**: Textextraktion und strukturierte Erfassung von Informationen
+- **Beziehungsdarstellung**: Visualisierung von Verbindungen zwischen Dokumenten und Fällen
+
+## Integration von Uwazi in die Menschenrechtsverteidiger-App
+
+### Architektonischer Überblick
+
+```
+┌─────────────────────────────────────────────────────────┐
+│                Menschenrechtsverteidiger-App             │
+│                                                         │
+│  ┌───────────┐    ┌───────────┐    ┌───────────────┐    │
+│  │ Frontend  │    │ KI-Layer  │    │ App-Backend   │    │
+│  └─────┬─────┘    └─────┬─────┘    └───────┬───────┘    │
+└────────┼───────────────┼────────────────────┼───────────┘
+         │               │                     │
+         ▼               ▼                     ▼
+┌──────────────────────────────────────────────────────────┐
+│                   Uwazi-Integration-Layer                │
+│                                                         │
+│  ┌────────────┐   ┌────────────┐   ┌─────────────────┐  │
+│  │ Dokument-  │   │ Abfrage-   │   │ Synchronisations-│  │
+│  │ Connector  │   │ Adapter    │   │ Manager         │  │
+│  └────────────┘   └────────────┘   └─────────────────┘  │
+│                                                         │
+│  ┌────────────┐   ┌────────────┐   ┌─────────────────┐  │
+│  │ Metadaten- │   │ Such-      │   │ Berechtigungs-  │  │
+│  │ Mapper     │   │ Proxy      │   │ Manager         │  │
+│  └────────────┘   └────────────┘   └─────────────────┘  │
+└─────────────────────────┬─────────────────────────────────┘
+                         │
+                         ▼
+┌──────────────────────────────────────────────────────────┐
+│                     Uwazi-Instanz                        │
+│                                                         │
+│  ┌────────────┐   ┌────────────┐   ┌─────────────────┐  │
+│  │ Dokumente  │   │ Entitäten  │   │ Beziehungen     │  │
+│  └────────────┘   └────────────┘   └─────────────────┘  │
+│                                                         │
+│  ┌────────────┐   ┌────────────┐   ┌─────────────────┐  │
+│  │ Vorlagen   │   │ Thesauri   │   │ ElasticSearch   │  │
+│  └────────────┘   └────────────┘   └─────────────────┘  │
+└──────────────────────────────────────────────────────────┘
+```
+
+### Technische Komponenten der Integration
+
+#### 1. Uwazi API-Connector
+
+```javascript
+// Beispiel eines Uwazi API-Connectors
+class UwaziConnector {
+  constructor(config) {
+    this.baseUrl = config.baseUrl;
+    this.apiKey = config.apiKey;
+    this.authenticatedUser = null;
+  }
+  
+  async authenticate() {
+    try {
+      const response = await fetch(`${this.baseUrl}/api/login`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          username: this.config.username,
+          password: this.config.password
+        })
+      });
+      
+      const data = await response.json();
+      if (data.success) {
+        this.authenticatedUser = data.user;
+        this.authToken = data.token;
+        return true;
+      }
+      return false;
+    } catch (error) {
+      console.error("Uwazi Authentication Error:", error);
+      return false;
+    }
+  }
+  
+  async searchDocuments(query, filters = {}, pagination = { limit: 30, page: 1 }) {
+    try {
+      const queryParams = new URLSearchParams({
+        searchTerm: query,
+        ...filters,
+        limit: pagination.limit,
+        page: pagination.page
+      });
+      
+      const response = await fetch(`${this.baseUrl}/api/search?${queryParams}`, {
+        headers: {
+          'Authorization': `Bearer ${this.authToken}`,
+          'Content-Type': 'application/json'
+        }
+      });
+      
+      return await response.json();
+    } catch (error) {
+      console.error("Uwazi Search Error:", error);
+      throw new Error("Failed to search documents in Uwazi");
+    }
+  }
+  
+  async uploadDocument(file, metadata, template) {
+    try {
+      const formData = new FormData();
+      formData.append('file', file);
+      formData.append('metadata', JSON.stringify(metadata));
+      formData.append('template', template);
+      
+      const response = await fetch(`${this.baseUrl}/api/documents`, {
+        method: 'POST',
+        headers: {
+          'Authorization': `Bearer ${this.authToken}`
+        },
+        body: formData
+      });
+      
+      return await response.json();
+    } catch (error) {
+      console.error("Uwazi Upload Error:", error);
+      throw new Error("Failed to upload document to Uwazi");
+    }
+  }
+  
+  async getEntity(entityId) {
+    try {
+      const response = await fetch(`${this.baseUrl}/api/entities?_id=${entityId}`, {
+        headers: {
+          'Authorization': `Bearer ${this.authToken}`,
+          'Content-Type': 'application/json'
+        }
+      });
+      
+      return await response.json();
+    } catch (error) {
+      console.error("Uwazi Entity Fetch Error:", error);
+      throw new Error("Failed to fetch entity from Uwazi");
+    }
+  }
+  
+  // Weitere Methoden für Relationships, Templates, etc.
+}
+```
+
+#### 2. Metadaten-Mapper
+
+```javascript
+// Metadaten-Mapper für die Konvertierung zwischen App und Uwazi
+class MetadataMapper {
+  constructor(appSchemas, uwaziTemplates) {
+    this.appSchemas = appSchemas;
+    this.uwaziTemplates = uwaziTemplates;
+    this.mappingRules = this._initializeMappingRules();
+  }
+  
+  _initializeMappingRules() {
+    // Intelligentes Mapping zwischen App-Schemas und Uwazi-Templates
+    const mappings = {};
+    
+    // Beispiel: Mapping für Beweismittel
+    mappings.evidence = {
+      template: 'evidence_document',
+      fieldMappings: {
+        title: 'title',
+        date: 'date',
+        location: 'location',
+        evidenceType: 'document_type',
+        description: 'description',
+        // Komplexere Mappings mit Transformationsregeln
+        tags: {
+          field: 'keywords',
+          transform: (tags) => tags.join(', ')
+        },
+        // Koordinaten-Mapping für geografische Daten
+        coordinates: {
+          field: 'geolocation',
+          transform: (coords) => ({ lat: coords.latitude, lon: coords.longitude })
+        }
+      }
+    };
+    
+    return mappings;
+  }
+  
+  appToUwazi(appEntity, entityType) {
+    const mapping = this.mappingRules[entityType];
+    if (!mapping) {
+      throw new Error(`No mapping defined for entity type: ${entityType}`);
+    }
+    
+    const uwaziEntity = {
+      template: mapping.template,
+      metadata: {}
+    };
+    
+    // Wende Feld-Mappings an
+    Object.entries(mapping.fieldMappings).forEach(([appField, uwaziMapping]) => {
+      if (!appEntity[appField]) return;
+      
+      // Einfaches Mapping
+      if (typeof uwaziMapping === 'string') {
+        uwaziEntity.metadata[uwaziMapping] = appEntity[appField];
+      } 
+      // Komplexes Mapping mit Transformation
+      else if (typeof uwaziMapping === 'object' && uwaziMapping.transform) {
+        uwaziEntity.metadata[uwaziMapping.field] = uwaziMapping.transform(appEntity[appField]);
+      }
+    });
+    
+    return uwaziEntity;
+  }
+  
+  uwaziToApp(uwaziEntity, entityType) {
+    const mapping = this.mappingRules[entityType];
+    if (!mapping) {
+      throw new Error(`No mapping defined for entity type: ${entityType}`);
+    }
+    
+    const appEntity = {};
+    
+    // Invertiere die Feld-Mappings
+    Object.entries(mapping.fieldMappings).forEach(([appField, uwaziMapping]) => {
+      const uwaziField = typeof uwaziMapping === 'string' ? uwaziMapping : uwaziMapping.field;
+      
+      if (!uwaziEntity.metadata[uwaziField]) return;
+      
+      // Einfaches Mapping
+      if (typeof uwaziMapping === 'string') {
+        appEntity[appField] = uwaziEntity.metadata[uwaziField];
+      } 
+      // Komplexes Mapping mit Rücktransformation
+      else if (typeof uwaziMapping === 'object' && uwaziMapping.reverseTransform) {
+        appEntity[appField] = uwaziMapping.reverseTransform(uwaziEntity.metadata[uwaziField]);
+      }
+      // Fallback für komplexe Mappings ohne Rücktransformation
+      else if (typeof uwaziMapping === 'object') {
+        appEntity[appField] = uwaziEntity.metadata[uwaziField];
+      }
+    });
+    
+    return appEntity;
+  }
+}
+```
+
+#### 3. KI-Uwazi-Integration für intelligente Dokumentenanalyse
+
+```javascript
+// KI-gestützte Uwazi-Dokumentenanalyse
+class UwaziKIAnalyzer {
+  constructor(uwaziConnector, poeInterface) {
+    this.uwazi = uwaziConnector;
+    this.poe = poeInterface;
+  }
+  
+  async analyzeDocument(documentId) {
+    // 1. Dokument aus Uwazi laden
+    const document = await this.uwazi.getEntity(documentId);
+    
+    // 2. Textinhalt extrahieren
+    const textContent = document.fullText || document.metadata.text || '';
+    if (!textContent) {
+      throw new Error("Document has no extractable text content");
+    }
+    
+    // 3. KI-Analyse mit spezifischem Prompt durchführen
+    const prompt = this._createDocumentAnalysisPrompt(textContent, document.metadata);
+    
+    return new Promise((resolve, reject) => {
+      this.poe.registerHandler("uwazi-doc-analysis", (result) => {
+        const msg = result.responses[0];
+        if (msg.status === "error") {
+          reject(new Error(`Analysis failed: ${msg.statusText}`));
+        } else if (msg.status === "complete") {
+          try {
+            // Strukturierte Daten aus der KI-Antwort extrahieren
+            const analysisResult = this._parseAnalysisResponse(msg.content);
+            resolve(analysisResult);
+          } catch (err) {
+            reject(new Error(`Failed to parse analysis result: ${err.message}`));
+          }
+        }
+      });
+      
+      // KI-Analyse starten
+      this.poe.sendUserMessage(
+        "@Claude-3.7-Sonnet " + prompt,
+        {
+          handler: "uwazi-doc-analysis",
+          stream: false,
+          openChat: false
+        }
+      ).catch(reject);
+    });
+  }
+  
+  _createDocumentAnalysisPrompt(textContent, metadata) {
+    // Erstellen eines spezialisierten Prompts für die Dokumentenanalyse
+    return `
+      Du bist ein Experte für Menschenrechtsdokumentation und juristische Analyse.
+      
+      AUFGABE:
+      Analysiere das folgende Dokument und extrahiere strukturierte Informationen nach dem angegebenen Schema.
+      
+      DOKUMENT:
+      Titel: ${metadata.title || 'Unbekannter Titel'}
+      Datum: ${metadata.date || 'Unbekanntes Datum'}
+      Typ: ${metadata.document_type || 'Unbekannter Dokumenttyp'}
+      
+      INHALT:
+      ${textContent.substring(0, 8000)}... ${textContent.length > 8000 ? '(gekürzt)' : ''}
+      
+      EXTRAHIERE FOLGENDE INFORMATIONEN:
+      1. Beteiligte Parteien (Personen, Organisationen, Institutionen)
+      2. Rechtliche Grundlagen und zitierte Gesetze/Normen
+      3. Zentrale Fakten und Behauptungen
+      4. Menschenrechtliche Implikationen
+      5. Verbindungen zu anderen Fällen oder Präzedenzfällen
+      6. Zeitliche Abfolge der beschriebenen Ereignisse
+      7. Schlüsselwörter für die Katalogisierung
+      
+      FORMAT:
+      Liefere die Antwort als JSON-Objekt mit den genannten Kategorien als Schlüssel.
+      Gib für jede Information die entsprechende Textstelle im Dokument an (mit Seitenzahl oder Absatznummer, falls verfügbar).
+      Verwende ausschließlich Informationen aus dem Dokument, keine Spekulationen.
+      
+      Antworte AUSSCHLIESSLICH mit dem JSON-Objekt ohne zusätzliche Erklärungen.
+    `;
+  }
+  
+  _parseAnalysisResponse(content) {
+    // Extrahiere das JSON aus der Antwort
+    const jsonMatch = content.match(/```json\s*([\s\S]*?)\s*```/) || 
+                      content.match(/\{[\s\S]*\}/);
+    
+    if (jsonMatch) {
+      try {
+        return JSON.parse(jsonMatch[1] || jsonMatch[0]);
+      } catch (e) {
+        console.error("JSON parsing error:", e);
+        throw new Error("Failed to parse JSON from response");
+      }
+    }
+    
+    throw new Error("No valid JSON found in response");
+  }
+  
+  async enhanceUwaziMetadata(documentId, analysisResult) {
+    // Aktualisiere Uwazi-Metadaten mit KI-Analyseergebnissen
+    const existingEntity = await this.uwazi.getEntity(documentId);
+    
+    // Anreicherung der Metadaten
+    const enhancedMetadata = {
+      ...existingEntity.metadata,
+      // Anreicherung mit analysierten Daten
+      involved_parties: analysisResult.beteiligte_parteien || [],
+      legal_basis: analysisResult.rechtliche_grundlagen || [],
+      key_facts: analysisResult.zentrale_fakten || [],
+      human_rights_implications: analysisResult.menschenrechtliche_implikationen || [],
+      related_cases: analysisResult.verbindungen || [],
+      timeline: analysisResult.zeitliche_abfolge || [],
+      extracted_keywords: analysisResult.schlüsselwörter || []
+    };
+    
+    // Update der Uwazi-Entität
+    return this.uwazi.updateEntity(documentId, {
+      metadata: enhancedMetadata
+    });
+  }
+}
+```
+
+#### 4. Suche und Abfrage-Layer
+
+```javascript
+// Erweiterter Such-Controller für Uwazi mit KI-Unterstützung
+class UwaziSearchController {
+  constructor(uwaziConnector, kiInterface) {
+    this.uwazi = uwaziConnector;
+    this.ki = kiInterface;
+  }
+  
+  async semanticSearch(naturalLanguageQuery) {
+    // 1. Natürlichsprachige Anfrage in strukturierte Suchparameter umwandeln
+    const structuredQuery = await this._convertToStructuredQuery(naturalLanguageQuery);
+    
+    // 2. Erweiterte Suche mit strukturierten Parametern
+    const searchResults = await this.uwazi.searchDocuments(
+      structuredQuery.searchTerm,
+      structuredQuery.filters,
+      { limit: 50, page: 1 }
+    );
+    
+    // 3. Ergebnisse durch KI neu gewichten und relevanzbasiert sortieren
+    return this._reRankResults(searchResults, naturalLanguageQuery);
+  }
+  
+  async _convertToStructuredQuery(naturalLanguageQuery) {
+    return new Promise((resolve, reject) => {
+      this.ki.registerHandler("query-structuring", (result) => {
+        const msg = result.responses[0];
+        if (msg.status === "error") {
+          reject(new Error(`Query structuring failed: ${msg.statusText}`));
+        } else if (msg.status === "complete") {
+          try {
+            const structuredQuery = JSON.parse(msg.content.match(/\{.*\}/s)[0]);
+            resolve(structuredQuery);
+          } catch (err) {
+            reject(new Error(`Failed to parse structured query: ${err.message}`));
+          }
+        }
+      });
+      
+      // KI-Anfrage zur Strukturierung der Suchanfrage
+      this.ki.sendUserMessage(
+        `@Claude-3.7-Sonnet Wandle folgende natürlichsprachige Suchanfrage in eine strukturierte Suchanfrage für ein Dokumentenmanagementsystem um. Antwort nur als JSON mit den Feldern "searchTerm" und "filters" (wobei filters ein Objekt mit anwendbaren Filtern wie date_range, document_type, etc. ist): "${naturalLanguageQuery}"`,
+        {
+          handler: "query-structuring",
+          stream: false,
+          openChat: false
+        }
+      ).catch(reject);
+    });
+  }
+  
+  async _reRankResults(searchResults, originalQuery) {
+    // KI-gestützte Neugewichtung der Suchergebnisse
+    if (!searchResults.rows || searchResults.rows.length === 0) {
+      return searchResults;
+    }
+    
+    // Erstelle einen Prompt zur Bewertung der Relevanz
+    const documentsForRanking = searchResults.rows.map((doc, i) => ({
+      id: doc._id,
+      title: doc.title || `Dokument ${i+1}`,
+      snippet: doc.snippets?.join(' ') || doc.metadata?.description || '',
+      score: doc.score
+    }));
+    
+    return new Promise((resolve, reject) => {
+      this.ki.registerHandler("result-ranking", (result) => {
+        const msg = result.responses[0];
+        if (msg.status === "error") {
+          reject(new Error(`Result ranking failed: ${msg.statusText}`));
+        } else if (msg.status === "complete") {
+          try {
+            const rankedIds = JSON.parse(msg.content.match(/\[.*\]/s)[0]);
+            
+            // Sortiere die Ergebnisse entsprechend der KI-Rangfolge
+            const originalRows = [...searchResults.rows];
+            searchResults.rows = rankedIds
+              .map(id => originalRows.find(doc => doc._id === id))
+              .filter(Boolean); // Entferne undefined-Einträge
+            
+            resolve(searchResults);
+          } catch (err) {
+            console.error("Result ranking parsing error:", err);
+            // Fallback: Originalsortierung beibehalten
+            resolve(searchResults);
+          }
+        }
+      });
+      
+      // KI-Anfrage zur Relevanzeinschätzung
+      this.ki.sendUserMessage(
+        `@Claude-3.7-Sonnet Gegeben ist eine Suchanfrage und eine Liste von Dokumenten. Ordne die Dokument-IDs nach ihrer Relevanz für die Anfrage. Gib nur die Liste der IDs in der neuen Reihenfolge zurück, keine Erklärungen.
+        
+Suchanfrage: "${originalQuery}"
+        
+Dokumente:
+${documentsForRanking.map(doc => `ID: ${doc.id}\nTitel: ${doc.title}\nAuszug: ${doc.snippet}\n`).join('\n')}`,
+        {
+          handler: "result-ranking",
+          stream: false,
+          openChat: false
+        }
+      ).catch(reject);
+    });
+  }
+}
+```
+
+#### 5. Synchronisationsmanager für Offline-Unterstützung
+
+```javascript
+// Synchronisationsmanager für Offline-Funktionalität mit Uwazi
+class UwaziSyncManager {
+  constructor(uwaziConnector, localDatabase) {
+    this.uwazi = uwaziConnector;
+    this.db = localDatabase;
+    this.syncQueue = [];
+    this.syncInProgress = false;
+  }
+  
+  // Lokale Änderungen für spätere Synchronisation speichern
+  async queueChanges(entityType, operation, data) {
+    await this.db.syncQueue.add({
+      entityType,
+      operation, // 'create', 'update', 'delete'
+      data,
+      timestamp: new Date().toISOString(),
+      status: 'pending'
+    });
+    
+    // Versuche zu synchronisieren, wenn online
+    if (navigator.onLine) {
+      this.synchronize();
+    }
+  }
+  
+  // Synchronisationsversuch, wenn Online-Status wiederhergestellt wird
+  setupEventListeners() {
+    window.addEventListener('online', () => {
+      console.log('App ist wieder online. Starte Synchronisation...');
+      this.synchronize();
+    });
+    
+    // Periodische Synchronisationsversuche
+    setInterval(() => {
+      if (navigator.onLine && !this.syncInProgress) {
+        this.synchronize();
+      }
+    }, 5 * 60 * 1000); // Alle 5 Minuten
+  }
+  
+  // Synchronisation durchführen
+  async synchronize() {
+    if (this.syncInProgress) return;
+    
+    try {
+      this.syncInProgress = true;
+      
+      // Ausstehende Synchronisationsaufgaben abrufen
+      const pendingItems = await this.db.syncQueue
+        .where('status')
+        .equals('pending')
+        .toArray();
+      
+      if (pendingItems.length === 0) {
+        console.log('Keine ausstehenden Änderungen zur Synchronisation.');
+        return;
+      }
+      
+      console.log(`Synchronisiere ${pendingItems.length} Änderungen mit Uwazi...`);
+      
+      // Verarbeite jede Änderung
+      for (const item of pendingItems) {
+        try {
+          switch (item.operation) {
+            case 'create':
+              await this.processCreate(item);
+              break;
+            case 'update':
+              await this.processUpdate(item);
+              break;
+            case 'delete':
+              await this.processDelete(item);
+              break;
+          }
+          
+          // Markiere als synchronisiert
+          await this.db.syncQueue.update(item.id, {
+            status: 'completed',
+            syncedAt: new Date().toISOString()
+          });
+          
+        } catch (error) {
+          console.error(`Fehler bei der Synchronisation von Element ${item.id}:`, error);
+          
+          // Markiere als fehlgeschlagen mit Fehlerinformation
+          await this.db.syncQueue.update(item.id, {
+            status: 'failed',
+            error: error.message,
+            retryCount: (item.retryCount || 0) + 1
+          });
+        }
+      }
+      
+      console.log('Synchronisation abgeschlossen.');
+      
+      // Lösche alte, erfolgreiche Synchronisationselemente nach einer Woche
+      const oneWeekAgo = new Date();
+      oneWeekAgo.setDate(oneWeekAgo.getDate() - 7);
+      
+      await this.db.syncQueue
+        .where('status')
+        .equals('completed')
+        .and(item => new Date(item.syncedAt) < oneWeekAgo)
+        .delete();
+        
+    } catch (error) {
+      console.error('Fehler bei der Synchronisation:', error);
+    } finally {
+      this.syncInProgress = false;
+    }
+  }
+  
+  // Verarbeitet eine Create-Operation
+  async processCreate(item) {
+    const { entityType, data } = item;
+    
+    if (entityType === 'document') {
+      // Für Dokumente mit Dateianhängen
+      if (data.file) {
+        const fileData = await this.db.files.get(data.file);
+        return this.uwazi.uploadDocument(
+          new File([fileData.blob], fileData.filename, { type: fileData.mimeType }),
+          data.metadata,
+          data.template
+        );
+      } else {
+        // Für Dokumente ohne Dateianhänge
+        return this.uwazi.createEntity(data);
+      }
+    } else if (entityType === 'relationship') {
+      return this.uwazi.createRelationship(data);
+    }
+    
+    throw new Error(`Unbekannter Entitätstyp für die Erstellung: ${entityType}`);
+  }
+  
+  // Verarbeitet eine Update-Operation
+  async processUpdate(item) {
+    const { entityType, data } = item;
+    
+    if (entityType === 'document' || entityType === 'entity') {
+      return this.uwazi.updateEntity(data.id, data.changes);
+    } else if (entityType === 'relationship') {
+      return this.uwazi.updateRelationship(data.id, data.changes);
+    }
+    
+    throw new Error(`Unbekannter Entitätstyp für das Update: ${entityType}`);
+  }
+  
+  // Verarbeitet eine Delete-Operation
+  async processDelete(item) {
+    const { entityType, data } = item;
+    
+    if (entityType === 'document' || entityType === 'entity') {
+      return this.uwazi.deleteEntity(data.id);
+    } else if (entityType === 'relationship') {
+      return this.uwazi.deleteRelationship(data.id);
+    }
+    
+    throw new Error(`Unbekannter Entitätstyp für das Löschen: ${entityType}`);
+  }
+}
+```
+
+## Hauptvorteile der Uwazi-Integration
+
+### 1. Zentralisierte Wissensdatenbank
+
+Die Integration mit Uwazi schafft eine zentrale Wissensdatenbank für Menschenrechtsverteidiger:
+
+- **Einheitliche Dokumentenstruktur**: Alle Dokumente werden nach konsistenten Standards kategorisiert und indiziert
+- **Universeller Zugriff**: Dokumente sind von überall zugänglich, mit entsprechenden Berechtigungen
+- **Kollaborative Basis**: Teams können an denselben Dokumenten arbeiten und Änderungen nachverfolgen
+- **Skalierbare Dokumentensammlung**: Verarbeitung großer Datenmengen durch Elastisearch-Basis
+
+### 2. Erweiterte Dokumentenanalyse durch KI
+
+Der größte Mehrwert entsteht durch die Kombination von Uwazi mit KI-Analysetools:
+
+- **Automatische Metadaten-Extraktion**: KI identifiziert Personen, Orte, Daten, Rechtsbegriffe
+- **Intelligente Querverweise**: Automatische Verknüpfung mit ähnlichen Fällen oder Präzedenzfällen
+- **Kontextuelle Einordnung**: Dokumente werden im historischen und rechtlichen Kontext analysiert
+- **Vorausschauende Dokumentenempfehlungen**: KI schlägt relevante ergänzende Dokumente vor
+
+### 3. Semantische Suche und fortgeschrittene Abfragen
+
+Die Kombination aus strukturierter Datenhaltung und KI ermöglicht völlig neue Suchmöglichkeiten:
+
+- **Natürlichsprachige Anfragen**: "Finde alle Fälle von Polizeigewalt gegen Demonstranten in Berlin 2022"
+- **Konzeptbasierte Suche**: Auffinden von Dokumenten basierend auf Konzepten statt nur Keywords
+- **Ähnlichkeitssuche**: "Finde ähnliche Fälle wie Fall X"
+- **Mehrstufige Abfragen**: Komplexe Anfragen mit mehreren Bedingungen und Zusammenhängen
+
+### 4. Offline-Funktionalität mit Synchronisation
+
+Die Kombination ermöglicht eine robuste Offline-Funktionalität:
+
+- **Lokale Datenhaltung**: Wichtige Dokumente werden lokal gespeichert
+- **Intelligente Synchronisation**: Priorisierte Synchronisation basierend auf Relevanz
+- **Konfliktlösung**: Automatische Zusammenführung von Änderungen, wo möglich
+- **Bandbreitenoptimierung**: Nur relevante Teile der Dokumente werden synchronisiert
+
+## Praktische Anwendungsfälle
+
+### Anwendungsfall 1: Dokumentation einer systematischen Menschenrechtsverletzung
+
+Ein Menschenrechtsverteidiger dokumentiert eine systematische Verletzung der Rechte einer Minderheit:
+
+1. **Sammlung und Import der Beweise**:
+   - Zeugenaussagen, Fotos und Dokumente werden in der App erfasst
+   - Die App kategorisiert die Dokumente automatisch
+   - Metadata wird extrahiert und mit Uwazi synchronisiert
+
+2. **KI-gestützte Analyse**:
+   - Die KI analysiert alle Dokumente und findet Muster
+   - Verbindungen zwischen verschiedenen Zeugenaussagen werden hergestellt
+   - Eine Timeline der Ereignisse wird automatisch generiert
+
+3. **Kontextualisierung durch die Wissensdatenbank**:
+   - Die App durchsucht Uwazi nach ähnlichen Fällen
+   - Relevante Gesetze und Präzedenzfälle werden identifiziert
+   - Ein historischer Kontext wird erstellt
+
+4. **Kollaborative Dokumentation**:
+   - Das Team arbeitet gemeinsam an der Dokumentation
+   - Änderungen werden in Echtzeit mit Uwazi synchronisiert
+   - Verschiedene Spezialisten können gleichzeitig an unterschiedlichen Aspekten arbeiten
+
+### Anwendungsfall 2: Strategische Prozessführung
+
+Ein Anwaltsteam bereitet einen strategischen Prozess zu Umweltrechten vor:
+
+1. **Fallbasierte Recherche**:
+   - Die App durchsucht Uwazi nach ähnlichen Umweltrechtsfällen
+   - KI erstellt eine Analyse von Erfolgs- und Misserfolgsfaktoren
+   - Relevante Rechtsprechung wird automatisch extrahiert
+
+2. **Dokumentenmanagement**:
+   - Alle fallrelevanten Dokumente werden in Uwazi organisiert
+   - Automatische Kategorisierung und Verschlagwortung
+   - Beziehungen zwischen Dokumenten werden visualisiert
+
+3. **Argumentationsunterstützung**:
+   - KI analysiert die Stärken und Schwächen der Argumentation
+   - Potenzielle Gegenargumente werden antizipiert
+   - Lücken in der Beweisführung werden identifiziert
+
+4. **Teamkoordination**:
+   - Aufgaben werden basierend auf der Dokumentenanalyse zugeteilt
+   - Fortschritte werden zentral dokumentiert
+   - Fristen und kritische Dokumente werden priorisiert
+
+## Implementierungsschritte für die Uwazi-Integration
+
+### Phase 1: Grundlegende Integration (1-2 Monate)
+
+1. **API-Connector-Entwicklung**:
+   - Implementierung der Grundfunktionen für Dokumente und Entitäten
+   - Authentifizierungs- und Autorisierungsmechanismen
+   - Fehlerbehandlung und Wiederholungslogik
+
+2. **Datenmodell-Mapping**:
+   - Definition der Entitätstypen und Templates in Uwazi
+   - Entwicklung des Metadaten-Mappers
+   - Testphase für die Datenübertragung
+
+3. **Grundlegende UI-Integration**:
+   - Dokumentensuche und -anzeige
+   - Upload- und Bearbeitungsfunktionen
+   - Einfache Filterfunktionen
+
+### Phase 2: Erweiterte Funktionen (2-3 Monate)
+
+1. **Offline-Funktionalität**:
+   - Implementierung der lokalen Datenhaltung
+   - Synchronisationslogik für Offline-Änderungen
+   - Konfliktlösungsmechanismen
+
+2. **Erweiterte Suche**:
+   - Integration der semantischen Suche
+   - Entwicklung der natürlichsprachigen Abfragen
+   - KI-basierte Ergebnisverfeinerung
+
+3. **Beziehungsmanagement**:
+   - Visualisierung von Dokumentenbeziehungen
+   - Werkzeuge zum Erstellen und Verwalten von Beziehungen
+   - Automatische Beziehungserkennung
+
+### Phase 3: KI-Integration (2-3 Monate)
+
+1. **Dokumentenanalyse**:
+   - Integration der KI-Analyse für Dokumente
+   - Automatische Metadatenextraktion
+   - Implementierung der Kategorisierung
+
+2. **Kontextgenerierung**:
+   - Entwicklung des Kontextanalyse-Moduls
+   - Integration mit der Uwazi-Wissensdatenbank
+   - Implementierung der Empfehlungslogik
+
+3. **KI-gestützte Workflows**:
+   - Automatisierte Arbeitsabläufe basierend auf Dokumententypen
+   - Intelligente Aufgabenzuweisung
+   - Priorisierungsalgorithmen
+
+## Zusammenfassung
+
+Die Integration von Uwazi in die Menschenrechtsverteidiger-App schafft eine leistungsstarke Plattform, die speziell auf die Bedürfnisse von Menschenrechtsorganisationen zugeschnitten ist. Durch die Kombination von strukturiertem Dokumentenmanagement mit KI-gestützter Analyse werden völlig neue Arbeitsweisen ermöglicht:
+
+- **Effizienz**: Automatisierte Dokumentenverarbeitung spart wertvolle Zeit
+- **Tiefe**: KI-Analysen decken Muster und Verbindungen auf, die sonst verborgen blieben
+- **Kollaboration**: Echte teamübergreifende Zusammenarbeit wird möglich
+- **Kontinuität**: Wissenssicherung unabhängig von Personalwechseln
+- **Skalierbarkeit**: Verarbeitung großer Datenmengen für systemische Analysen
+
+Die Uwazi-Integration ist kein bloßes technisches Feature, sondern ein fundamentaler Baustein für effektivere Menschenrechtsarbeit, der es ermöglicht, strukturierte und unstrukturierte Informationen zu erfassen, zu analysieren und strategisch zu nutzen.

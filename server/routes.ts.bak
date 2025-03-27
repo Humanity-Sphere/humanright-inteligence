@@ -1,0 +1,287 @@
+import type { Express, Request, Response } from "express";
+import { createServer, type Server } from "http";
+import { storage } from "./storage";
+import { generateContent } from "./services/gemini";
+import { insertContentSchema, insertDocumentSchema, insertCampaignSchema, insertActivitySchema } from "@shared/schema";
+import { z } from "zod";
+import { fromZodError } from "zod-validation-error";
+
+export async function registerRoutes(app: Express): Promise<Server> {
+  // API Routes - prefix with /api
+  
+  // User routes
+  app.get("/api/user/current", async (req: Request, res: Response) => {
+    try {
+      // In a real app, this would use session/auth information
+      // For demo, we'll use the default user
+      const user = await storage.getUser(1);
+      if (!user) {
+        return res.status(404).json({ error: "User not found" });
+      }
+      
+      // Don't send the password
+      const { password, ...userWithoutPassword } = user;
+      res.json(userWithoutPassword);
+    } catch (error) {
+      res.status(500).json({ error: "Failed to get user" });
+    }
+  });
+
+  // Document routes
+  app.get("/api/documents", async (req: Request, res: Response) => {
+    try {
+      // In a real app, would use authenticated user's ID
+      const userId = 1;
+      const documents = await storage.getDocuments(userId);
+      res.json(documents);
+    } catch (error) {
+      res.status(500).json({ error: "Failed to get documents" });
+    }
+  });
+
+  app.get("/api/documents/:id", async (req: Request, res: Response) => {
+    try {
+      const id = parseInt(req.params.id);
+      if (isNaN(id)) {
+        return res.status(400).json({ error: "Invalid document ID" });
+      }
+      
+      const document = await storage.getDocument(id);
+      if (!document) {
+        return res.status(404).json({ error: "Document not found" });
+      }
+      res.json(document);
+    } catch (error) {
+      res.status(500).json({ error: "Failed to get document" });
+    }
+  });
+
+  app.post("/api/documents", async (req: Request, res: Response) => {
+    try {
+      // In a real app, would validate user is authenticated
+      const userId = 1;
+      
+      // Validate request body against schema
+      const documentData = { ...req.body, userId };
+      const parsedData = insertDocumentSchema.parse(documentData);
+      
+      const document = await storage.createDocument(parsedData);
+      res.status(201).json(document);
+    } catch (error) {
+      if (error && typeof error === 'object' && error instanceof z.ZodError) {
+        return res.status(400).json({ 
+          error: "Invalid document data", 
+          details: fromZodError(error) 
+        });
+      }
+      res.status(500).json({ error: "Failed to create document" });
+    }
+  });
+
+  app.delete("/api/documents/:id", async (req: Request, res: Response) => {
+    try {
+      const id = parseInt(req.params.id);
+      if (isNaN(id)) {
+        return res.status(400).json({ error: "Invalid document ID" });
+      }
+      
+      const success = await storage.deleteDocument(id);
+      if (!success) {
+        return res.status(404).json({ error: "Document not found" });
+      }
+      res.status(204).send();
+    } catch (error) {
+      res.status(500).json({ error: "Failed to delete document" });
+    }
+  });
+
+  // Campaign routes
+  app.get("/api/campaigns", async (req: Request, res: Response) => {
+    try {
+      // In a real app, would use authenticated user's ID
+      const userId = 1;
+      const campaigns = await storage.getCampaigns(userId);
+      res.json(campaigns);
+    } catch (error) {
+      res.status(500).json({ error: "Failed to get campaigns" });
+    }
+  });
+
+  app.get("/api/campaigns/:id", async (req: Request, res: Response) => {
+    try {
+      const id = parseInt(req.params.id);
+      if (isNaN(id)) {
+        return res.status(400).json({ error: "Invalid campaign ID" });
+      }
+      
+      const campaign = await storage.getCampaign(id);
+      if (!campaign) {
+        return res.status(404).json({ error: "Campaign not found" });
+      }
+      res.json(campaign);
+    } catch (error) {
+      res.status(500).json({ error: "Failed to get campaign" });
+    }
+  });
+
+  app.post("/api/campaigns", async (req: Request, res: Response) => {
+    try {
+      // In a real app, would validate user is authenticated
+      const userId = 1;
+      
+      // Validate request body against schema
+      const campaignData = { ...req.body, userId };
+      const parsedData = insertCampaignSchema.parse(campaignData);
+      
+      const campaign = await storage.createCampaign(parsedData);
+      res.status(201).json(campaign);
+    } catch (error) {
+      if (error && typeof error === 'object' && error instanceof z.ZodError) {
+        return res.status(400).json({ 
+          error: "Invalid campaign data", 
+          details: fromZodError(error) 
+        });
+      }
+      res.status(500).json({ error: "Failed to create campaign" });
+    }
+  });
+
+  app.patch("/api/campaigns/:id", async (req: Request, res: Response) => {
+    try {
+      const id = parseInt(req.params.id);
+      if (isNaN(id)) {
+        return res.status(400).json({ error: "Invalid campaign ID" });
+      }
+      
+      const updatedCampaign = await storage.updateCampaign(id, req.body);
+      if (!updatedCampaign) {
+        return res.status(404).json({ error: "Campaign not found" });
+      }
+      res.json(updatedCampaign);
+    } catch (error) {
+      res.status(500).json({ error: "Failed to update campaign" });
+    }
+  });
+
+  // Content routes
+  app.get("/api/content", async (req: Request, res: Response) => {
+    try {
+      // In a real app, would use authenticated user's ID
+      const userId = 1;
+      const contents = await storage.getContents(userId);
+      res.json(contents);
+    } catch (error) {
+      res.status(500).json({ error: "Failed to get content" });
+    }
+  });
+
+  app.post("/api/content/generate", async (req: Request, res: Response) => {
+    try {
+      // In a real app, would validate user is authenticated
+      const userId = 1;
+      
+      const { title, type, tone, instructions, dataSources } = req.body;
+      
+      if (!title || !type || !tone) {
+        return res.status(400).json({ 
+          error: "Missing required fields", 
+          details: "Title, type, and tone are required" 
+        });
+      }
+      
+      // Generate content using OpenAI
+      const generatedText = await generateContent({
+        title,
+        type,
+        tone,
+        instructions,
+        dataSources: dataSources || []
+      });
+      
+      // Save the generated content
+      const contentData = {
+        userId,
+        title,
+        type,
+        tone,
+        text: generatedText,
+        dataSources: dataSources || [],
+        isSaved: false
+      };
+      
+      const parsedData = insertContentSchema.parse(contentData);
+      const content = await storage.createContent(parsedData);
+      
+      res.status(201).json(content);
+    } catch (error) {
+      if (error && typeof error === 'object' && error instanceof z.ZodError) {
+        return res.status(400).json({ 
+          error: "Invalid content data", 
+          details: fromZodError(error) 
+        });
+      }
+      res.status(500).json({ 
+        error: "Failed to generate content", 
+        details: error instanceof Error ? error.message : "Unknown error" 
+      });
+    }
+  });
+
+  app.patch("/api/content/:id", async (req: Request, res: Response) => {
+    try {
+      const id = parseInt(req.params.id);
+      if (isNaN(id)) {
+        return res.status(400).json({ error: "Invalid content ID" });
+      }
+      
+      const updatedContent = await storage.updateContent(id, req.body);
+      if (!updatedContent) {
+        return res.status(404).json({ error: "Content not found" });
+      }
+      res.json(updatedContent);
+    } catch (error) {
+      res.status(500).json({ error: "Failed to update content" });
+    }
+  });
+
+  // Activity routes
+  app.get("/api/activities", async (req: Request, res: Response) => {
+    try {
+      // In a real app, would use authenticated user's ID
+      const userId = 1;
+      
+      // Get limit from query parameter
+      const limit = req.query.limit ? parseInt(req.query.limit as string) : undefined;
+      
+      const activities = await storage.getActivities(userId, limit);
+      res.json(activities);
+    } catch (error) {
+      res.status(500).json({ error: "Failed to get activities" });
+    }
+  });
+
+  app.post("/api/activities", async (req: Request, res: Response) => {
+    try {
+      // In a real app, would validate user is authenticated
+      const userId = 1;
+      
+      // Validate request body against schema
+      const activityData = { ...req.body, userId };
+      const parsedData = insertActivitySchema.parse(activityData);
+      
+      const activity = await storage.createActivity(parsedData);
+      res.status(201).json(activity);
+    } catch (error) {
+      if (error && typeof error === 'object' && error instanceof z.ZodError) {
+        return res.status(400).json({ 
+          error: "Invalid activity data", 
+          details: fromZodError(error) 
+        });
+      }
+      res.status(500).json({ error: "Failed to create activity" });
+    }
+  });
+
+  const httpServer = createServer(app);
+  return httpServer;
+}
