@@ -1,0 +1,54 @@
+
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Start Development Server",
+      "type": "shell",
+      "command": "npm run dev",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Build Project",
+      "type": "shell",
+      "command": "npm run build",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Start Mobile App",
+      "type": "shell",
+      "command": "cd mobile-app && npx expo start --host 0.0.0.0 --port 8081 --clear",
+      "problemMatcher": []
+    },
+    {
+      "label": "npm: install",
+      "type": "shell",
+      "command": "npm install",
+      "problemMatcher": []
+    },
+    {
+      "label": "npm: mobile-install",
+      "type": "shell",
+      "command": "cd mobile-app && npm install",
+      "problemMatcher": []
+    },
+    {
+      "label": "npm: build",
+      "type": "shell",
+      "command": "npm run build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Start Electron App",
+      "type": "shell",
+      "command": "npx electron electron/main.js",
+      "problemMatcher": [],
+      "dependsOn": ["npm: build"]
+    }
+  ]
+}

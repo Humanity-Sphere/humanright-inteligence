@@ -1,0 +1,75 @@
+
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Docker .NET Attach (Preview)",
+      "type": "docker",
+      "request": "attach",
+      "platform": "netCore",
+      "sourceFileMap": {
+        "/src": "${workspaceFolder}"
+      }
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Start Server",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/server/index.ts",
+      "outFiles": ["${workspaceFolder}/dist/**/*.js"],
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["--loader=tsx"],
+      "env": {
+        "NODE_ENV": "development"
+      },
+      "console": "integratedTerminal",
+      "sourceMaps": true,
+      "resolveSourceMapLocations": [
+        "${workspaceFolder}/**",
+        "!**/node_modules/**"
+      ],
+      "preLaunchTask": "npm: install"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Start Desktop App (Electron)",
+      "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/electron",
+      "windows": {
+        "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/electron.cmd"
+      },
+      "program": "${workspaceFolder}/electron/main.js",
+      "preLaunchTask": "npm: build",
+      "console": "integratedTerminal"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Start Mobile App",
+      "cwd": "${workspaceFolder}/mobile-app",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": [
+        "expo",
+        "start",
+        "--host",
+        "0.0.0.0",
+        "--port",
+        "8081",
+        "--clear"
+      ],
+      "console": "integratedTerminal",
+      "preLaunchTask": "npm: mobile-install"
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Start Full Application",
+      "configurations": ["Start Server", "Start Mobile App"]
+    },
+    {
+      "name": "Start Desktop Application",
+      "configurations": ["Start Server", "Start Desktop App (Electron)"]
+    }
+  ]
+}
