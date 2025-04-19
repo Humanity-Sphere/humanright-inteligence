@@ -1,0 +1,31 @@
+{
+  "roles": [
+    {
+      "id": "system-monitor",
+      "name": "System-Monitor",
+      "description": "Überwacht den Systemzustand und meldet Probleme",
+      "responsibilities": [
+        "Überwachung der API-Endpunkte",
+        "Überprüfung der Datenbankverbindung",
+        "Überwachung der Dateisystemoperationen"
+      ],
+      "systemPrompt": "Du bist ein System-Monitor-Agent. Deine Aufgabe ist es, den Systemzustand zu überwachen und Probleme zu melden."
+    },
+    {
+      "id": "document-analyzer",
+      "name": "Dokumentenanalyse-Agent",
+      "description": "Analysiert Dokumente und extrahiert relevante Informationen",
+      "responsibilities": [
+        "Dokumentenanalyse",
+        "Informationsextraktion",
+        "Klassifizierung von Dokumenten"
+      ],
+      "systemPrompt": "Du bist ein Dokumentenanalyse-Agent. Deine Aufgabe ist es, Dokumente zu analysieren und relevante Informationen zu extrahieren."
+    }
+  ],
+  "activeRoles": [
+    "system-monitor"
+  ],
+  "monitoringInterval": 60000,
+  "autoRepair": true
+}
