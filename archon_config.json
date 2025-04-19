@@ -1,0 +1,8 @@
+{
+  "active": true,
+  "learningRate": 0.5,
+  "autonomyLevel": "medium",
+  "safetyMechanisms": true,
+  "logEventsToDatabase": true,
+  "allowSystemModification": true
+}

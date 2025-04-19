@@ -1,0 +1,47 @@
+appId: "com.hrd.defender.tools"
+productName: "Human Rights Defender Tools"
+copyright: "Copyright © 2024"
+
+directories:
+  output: "dist"
+  buildResources: "electron"
+
+files:
+  - "build/**/*"
+  - "electron/**/*"
+  - "node_modules/**/*"
+  - "start-desktop-app.bat"
+
+# Windows-spezifische Konfiguration
+win:
+  target: 
+    - target: "nsis" # Windows-Installer
+      arch: 
+        - "x64" # 64-bit
+  icon: "electron/icon.ico"
+
+# macOS-spezifische Konfiguration
+mac:
+  target: "dmg"
+  icon: "electron/icon.icns"
+
+# Linux-spezifische Konfiguration
+linux:
+  target: 
+    - "AppImage"
+    - "deb"
+  icon: "electron/icon.png"
+  category: "Utility"
+
+# Installer-Konfiguration für Windows
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: "Human Rights Defender Tools"
+
+# Publish (hier für manuelles Update)
+publish:
+  provider: "generic"
+  url: "https://example.com/updates/"

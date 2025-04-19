@@ -1,0 +1,1211 @@
+[2025-04-05T18:25:17.570Z] [INFO] [Archon] Archon-Integration initialisiert
+[2025-04-05T18:25:21.363Z] [INFO] [Archon] Archon-Integration initialisiert
+[2025-04-05T18:40:20.270Z] [INFO] Archon Integration Service initialisiert
+[2025-04-05T18:40:20.271Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-05T18:40:20.271Z] [INFO] Archon Integration aktiviert
+[2025-04-05T18:40:20.271Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-05T18:40:20.284Z] [INFO] Standardkonfiguration erstellt
+[2025-04-05T19:43:27.418Z] [INFO] Archon Integration Service initialisiert
+[2025-04-05T19:43:27.418Z] [INFO] Archon Integration aktiviert
+[2025-04-05T19:43:27.418Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-05T19:43:27.418Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-05T19:43:27.443Z] [INFO] Konfiguration geladen
+[2025-04-05T20:00:09.934Z] [INFO] Archon Integration Service initialisiert
+[2025-04-05T20:00:09.935Z] [INFO] Archon Integration aktiviert
+[2025-04-05T20:00:09.935Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-05T20:00:09.935Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-05T20:00:09.960Z] [INFO] Konfiguration geladen
+[2025-04-05T20:00:59.513Z] [INFO] Archon Integration Service initialisiert
+[2025-04-05T20:00:59.515Z] [INFO] Archon Integration aktiviert
+[2025-04-05T20:00:59.515Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-05T20:00:59.516Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-05T20:00:59.544Z] [INFO] Konfiguration geladen
+[2025-04-05T20:46:02.742Z] [INFO] Archon Integration Service initialisiert
+[2025-04-05T20:46:02.742Z] [INFO] Archon Integration aktiviert
+[2025-04-05T20:46:02.742Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-05T20:46:02.743Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-05T20:46:02.777Z] [INFO] Konfiguration geladen
+[2025-04-05T20:54:42.299Z] [INFO] Archon Integration Service initialisiert
+[2025-04-05T20:54:42.300Z] [INFO] Archon Integration aktiviert
+[2025-04-05T20:54:42.301Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-05T20:54:42.301Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-05T20:54:42.357Z] [INFO] Konfiguration geladen
+[2025-04-05T20:55:24.564Z] [INFO] Archon Integration Service initialisiert
+[2025-04-05T20:55:24.565Z] [INFO] Archon Integration aktiviert
+[2025-04-05T20:55:24.565Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-05T20:55:24.568Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-05T20:55:24.620Z] [INFO] Konfiguration geladen
+[2025-04-05T20:56:04.202Z] [INFO] Archon Integration Service initialisiert
+[2025-04-05T20:56:04.203Z] [INFO] Archon Integration aktiviert
+[2025-04-05T20:56:04.203Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-05T20:56:04.203Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-05T20:56:04.222Z] [INFO] Konfiguration geladen
+[2025-04-05T21:16:50.875Z] [INFO] Archon Integration Service initialisiert
+[2025-04-05T21:16:50.876Z] [INFO] Archon Integration aktiviert
+[2025-04-05T21:16:50.876Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-05T21:16:50.876Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-05T21:16:50.892Z] [INFO] Konfiguration geladen
+[2025-04-05T21:18:56.521Z] [INFO] Archon Integration Service initialisiert
+[2025-04-05T21:18:56.521Z] [INFO] Archon Integration aktiviert
+[2025-04-05T21:18:56.521Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-05T21:18:56.521Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-05T21:18:56.542Z] [INFO] Konfiguration geladen
+[2025-04-05T21:19:35.938Z] [INFO] Archon Integration Service initialisiert
+[2025-04-05T21:19:35.939Z] [INFO] Archon Integration aktiviert
+[2025-04-05T21:19:35.939Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-05T21:19:35.939Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-05T21:19:35.972Z] [INFO] Konfiguration geladen
+[2025-04-05T21:27:12.236Z] [INFO] Archon Integration Service initialisiert
+[2025-04-05T21:27:12.237Z] [INFO] Archon Integration aktiviert
+[2025-04-05T21:27:12.237Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-05T21:27:12.237Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-05T21:27:12.320Z] [INFO] Konfiguration geladen
+[2025-04-05T21:27:59.095Z] [INFO] Archon Integration Service initialisiert
+[2025-04-05T21:27:59.095Z] [INFO] Archon Integration aktiviert
+[2025-04-05T21:27:59.096Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-05T21:27:59.095Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-05T21:27:59.115Z] [INFO] Konfiguration geladen
+[2025-04-05T21:49:00.642Z] [INFO] Archon Integration Service initialisiert
+[2025-04-05T21:49:00.643Z] [INFO] Archon Integration aktiviert
+[2025-04-05T21:49:00.643Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-05T21:49:00.643Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-05T21:49:00.659Z] [INFO] Konfiguration geladen
+[2025-04-05T22:25:34.084Z] [INFO] Archon Integration Service initialisiert
+[2025-04-05T22:25:34.085Z] [INFO] Archon Integration aktiviert
+[2025-04-05T22:25:34.085Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-05T22:25:34.085Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-05T22:25:34.105Z] [INFO] Konfiguration geladen
+[2025-04-05T22:25:39.369Z] [INFO] Archon Integration Service initialisiert
+[2025-04-05T22:25:39.370Z] [INFO] Archon Integration aktiviert
+[2025-04-05T22:25:39.370Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-05T22:25:39.370Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-05T22:25:39.399Z] [INFO] Konfiguration geladen
+[2025-04-05T22:37:57.294Z] [INFO] Archon Integration Service initialisiert
+[2025-04-05T22:37:57.295Z] [INFO] Archon Integration aktiviert
+[2025-04-05T22:37:57.295Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-05T22:37:57.296Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-05T22:37:57.344Z] [INFO] Konfiguration geladen
+[2025-04-05T22:39:09.922Z] [INFO] Archon Integration Service initialisiert
+[2025-04-05T22:39:09.923Z] [INFO] Archon Integration aktiviert
+[2025-04-05T22:39:09.923Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-05T22:39:09.923Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-05T22:39:09.956Z] [INFO] Konfiguration geladen
+[2025-04-05T22:42:48.657Z] [INFO] Archon Integration Service initialisiert
+[2025-04-05T22:42:48.658Z] [INFO] Archon Integration aktiviert
+[2025-04-05T22:42:48.658Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-05T22:42:48.658Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-05T22:42:48.685Z] [INFO] Konfiguration geladen
+[2025-04-05T22:44:51.347Z] [INFO] Archon Integration Service initialisiert
+[2025-04-05T22:44:51.348Z] [INFO] Archon Integration aktiviert
+[2025-04-05T22:44:51.349Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-05T22:44:51.348Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-05T22:44:51.430Z] [INFO] Konfiguration geladen
+[2025-04-05T22:45:43.839Z] [INFO] Archon Integration Service initialisiert
+[2025-04-05T22:45:43.839Z] [INFO] Archon Integration aktiviert
+[2025-04-05T22:45:43.839Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-05T22:45:43.839Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-05T22:45:43.870Z] [INFO] Konfiguration geladen
+[2025-04-05T22:46:13.813Z] [INFO] Archon Integration Service initialisiert
+[2025-04-05T22:46:13.814Z] [INFO] Archon Integration aktiviert
+[2025-04-05T22:46:13.814Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-05T22:46:13.814Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-05T22:46:13.847Z] [INFO] Konfiguration geladen
+[2025-04-05T22:48:10.853Z] [INFO] Archon Integration Service initialisiert
+[2025-04-05T22:48:10.854Z] [INFO] Archon Integration aktiviert
+[2025-04-05T22:48:10.854Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-05T22:48:10.854Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-05T22:48:10.869Z] [INFO] Konfiguration geladen
+[2025-04-05T22:48:38.933Z] [INFO] Archon Integration Service initialisiert
+[2025-04-05T22:48:38.934Z] [INFO] Archon Integration aktiviert
+[2025-04-05T22:48:38.934Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-05T22:48:38.934Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-05T22:48:38.961Z] [INFO] Konfiguration geladen
+[2025-04-05T22:53:21.347Z] [INFO] Archon Integration Service initialisiert
+[2025-04-05T22:53:21.348Z] [INFO] Archon Integration aktiviert
+[2025-04-05T22:53:21.348Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-05T22:53:21.348Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-05T22:53:21.373Z] [INFO] Konfiguration geladen
+[2025-04-05T22:53:36.893Z] [INFO] Archon Integration Service initialisiert
+[2025-04-05T22:53:36.894Z] [INFO] Archon Integration aktiviert
+[2025-04-05T22:53:36.894Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-05T22:53:36.894Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-05T22:53:36.909Z] [INFO] Konfiguration geladen
+[2025-04-05T23:17:46.967Z] [INFO] Archon Integration Service initialisiert
+[2025-04-05T23:17:46.967Z] [INFO] Archon Integration aktiviert
+[2025-04-05T23:17:46.968Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-05T23:17:46.968Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-05T23:17:46.988Z] [INFO] Konfiguration geladen
+[2025-04-05T23:38:10.413Z] [INFO] Archon Integration Service initialisiert
+[2025-04-05T23:38:10.414Z] [INFO] Archon Integration aktiviert
+[2025-04-05T23:38:10.414Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-05T23:38:10.414Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-05T23:38:10.456Z] [INFO] Konfiguration geladen
+[2025-04-05T23:38:48.029Z] [INFO] Archon Integration Service initialisiert
+[2025-04-05T23:38:48.030Z] [INFO] Archon Integration aktiviert
+[2025-04-05T23:38:48.030Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-05T23:38:48.030Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-05T23:38:48.054Z] [INFO] Konfiguration geladen
+[2025-04-05T23:49:10.521Z] [INFO] Archon Integration Service initialisiert
+[2025-04-05T23:49:10.521Z] [INFO] Archon Integration aktiviert
+[2025-04-05T23:49:10.522Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-05T23:49:10.522Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-05T23:49:10.550Z] [INFO] Konfiguration geladen
+[2025-04-05T23:49:49.146Z] [INFO] Archon Integration Service initialisiert
+[2025-04-05T23:49:49.146Z] [INFO] Archon Integration aktiviert
+[2025-04-05T23:49:49.146Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-05T23:49:49.147Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-05T23:49:49.423Z] [INFO] Konfiguration geladen
+[2025-04-05T23:53:24.543Z] [INFO] Archon Integration Service initialisiert
+[2025-04-05T23:53:24.543Z] [INFO] Archon Integration aktiviert
+[2025-04-05T23:53:24.543Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-05T23:53:24.544Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-05T23:53:24.563Z] [INFO] Konfiguration geladen
+[2025-04-06T00:15:14.699Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T00:15:14.700Z] [INFO] Archon Integration aktiviert
+[2025-04-06T00:15:14.700Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T00:15:14.700Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T00:15:14.722Z] [INFO] Konfiguration geladen
+[2025-04-06T00:15:34.592Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T00:15:34.592Z] [INFO] Archon Integration aktiviert
+[2025-04-06T00:15:34.592Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T00:15:34.592Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T00:15:34.615Z] [INFO] Konfiguration geladen
+[2025-04-06T00:41:04.325Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T00:41:04.326Z] [INFO] Archon Integration aktiviert
+[2025-04-06T00:41:04.326Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T00:41:04.333Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T00:41:04.368Z] [INFO] Konfiguration geladen
+[2025-04-06T00:41:10.655Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T00:41:10.657Z] [INFO] Archon Integration aktiviert
+[2025-04-06T00:41:10.658Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T00:41:10.658Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T00:41:10.744Z] [INFO] Konfiguration geladen
+[2025-04-06T00:41:55.428Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T00:41:55.429Z] [INFO] Archon Integration aktiviert
+[2025-04-06T00:41:55.429Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T00:41:55.429Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T00:41:55.455Z] [INFO] Konfiguration geladen
+[2025-04-06T00:44:53.161Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T00:44:53.161Z] [INFO] Archon Integration aktiviert
+[2025-04-06T00:44:53.161Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T00:44:53.161Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T00:44:53.180Z] [INFO] Konfiguration geladen
+[2025-04-06T00:50:46.267Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T00:50:46.267Z] [INFO] Archon Integration aktiviert
+[2025-04-06T00:50:46.268Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T00:50:46.268Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T00:50:46.292Z] [INFO] Konfiguration geladen
+[2025-04-06T01:28:49.277Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T01:28:49.277Z] [INFO] Archon Integration aktiviert
+[2025-04-06T01:28:49.277Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T01:28:49.278Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T01:28:49.311Z] [INFO] Konfiguration geladen
+[2025-04-06T01:29:44.075Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T01:29:44.075Z] [INFO] Archon Integration aktiviert
+[2025-04-06T01:29:44.075Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T01:29:44.075Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T01:29:44.094Z] [INFO] Konfiguration geladen
+[2025-04-06T01:36:54.461Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T01:36:54.461Z] [INFO] Archon Integration aktiviert
+[2025-04-06T01:36:54.461Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T01:36:54.461Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T01:36:54.477Z] [INFO] Konfiguration geladen
+[2025-04-06T01:55:22.630Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T01:55:22.631Z] [INFO] Archon Integration aktiviert
+[2025-04-06T01:55:22.631Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T01:55:22.631Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T01:55:22.657Z] [INFO] Konfiguration geladen
+[2025-04-06T01:59:18.893Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T01:59:18.894Z] [INFO] Archon Integration aktiviert
+[2025-04-06T01:59:18.894Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T01:59:18.894Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T02:19:48.529Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T02:19:48.530Z] [INFO] Archon Integration aktiviert
+[2025-04-06T02:19:48.530Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T02:19:48.530Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T02:19:48.547Z] [INFO] Konfiguration geladen
+[2025-04-06T02:36:10.278Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T02:36:10.279Z] [INFO] Archon Integration aktiviert
+[2025-04-06T02:36:10.279Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T02:36:10.279Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T02:36:10.296Z] [INFO] Konfiguration geladen
+[2025-04-06T02:43:01.579Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T02:43:01.580Z] [INFO] Archon Integration aktiviert
+[2025-04-06T02:43:01.580Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T02:43:01.580Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T02:43:01.641Z] [INFO] Konfiguration geladen
+[2025-04-06T03:08:21.346Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T03:08:21.346Z] [INFO] Archon Integration aktiviert
+[2025-04-06T03:08:21.347Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T03:08:21.347Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T03:08:21.361Z] [INFO] Konfiguration geladen
+[2025-04-06T03:11:57.206Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T03:11:57.206Z] [INFO] Archon Integration aktiviert
+[2025-04-06T03:11:57.206Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T03:11:57.206Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T03:11:57.221Z] [INFO] Konfiguration geladen
+[2025-04-06T03:23:24.861Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T03:23:24.862Z] [INFO] Archon Integration aktiviert
+[2025-04-06T03:23:24.862Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T03:23:24.862Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T03:23:24.897Z] [INFO] Konfiguration geladen
+[2025-04-06T03:27:28.256Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T03:27:28.256Z] [INFO] Archon Integration aktiviert
+[2025-04-06T03:27:28.257Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T03:27:28.257Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T03:27:28.328Z] [INFO] Konfiguration geladen
+[2025-04-06T03:29:26.488Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T03:29:26.489Z] [INFO] Archon Integration aktiviert
+[2025-04-06T03:29:26.489Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T03:29:26.489Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T03:29:26.517Z] [INFO] Konfiguration geladen
+[2025-04-06T03:30:16.472Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T03:30:16.474Z] [INFO] Archon Integration aktiviert
+[2025-04-06T03:30:16.474Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T03:30:16.477Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T03:30:16.500Z] [INFO] Konfiguration geladen
+[2025-04-06T03:30:45.926Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T03:30:45.926Z] [INFO] Archon Integration aktiviert
+[2025-04-06T03:30:45.926Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T03:30:45.926Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T03:30:45.947Z] [INFO] Konfiguration geladen
+[2025-04-06T03:32:54.120Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T03:32:54.121Z] [INFO] Archon Integration aktiviert
+[2025-04-06T03:32:54.121Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T03:32:54.121Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T03:32:54.150Z] [INFO] Konfiguration geladen
+[2025-04-06T03:35:42.514Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T03:35:42.515Z] [INFO] Archon Integration aktiviert
+[2025-04-06T03:35:42.515Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T03:35:42.515Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T03:35:42.535Z] [INFO] Konfiguration geladen
+[2025-04-06T03:38:37.425Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T03:38:37.425Z] [INFO] Archon Integration aktiviert
+[2025-04-06T03:38:37.426Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T03:38:37.426Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T03:38:37.441Z] [INFO] Konfiguration geladen
+[2025-04-06T03:38:58.993Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T03:38:58.993Z] [INFO] Archon Integration aktiviert
+[2025-04-06T03:38:58.994Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T03:38:58.994Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T03:38:59.034Z] [INFO] Konfiguration geladen
+[2025-04-06T03:40:41.961Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T03:40:41.962Z] [INFO] Archon Integration aktiviert
+[2025-04-06T03:40:41.962Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T03:40:41.962Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T03:40:41.981Z] [INFO] Konfiguration geladen
+[2025-04-06T03:40:59.617Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T03:40:59.617Z] [INFO] Archon Integration aktiviert
+[2025-04-06T03:40:59.617Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T03:40:59.618Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T03:40:59.637Z] [INFO] Konfiguration geladen
+[2025-04-06T03:50:19.483Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T03:50:19.484Z] [INFO] Archon Integration aktiviert
+[2025-04-06T03:50:19.484Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T03:50:19.490Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T03:50:19.649Z] [INFO] Konfiguration geladen
+[2025-04-06T03:53:07.934Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T03:53:07.935Z] [INFO] Archon Integration aktiviert
+[2025-04-06T03:53:07.935Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T03:53:07.935Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T03:53:07.953Z] [INFO] Konfiguration geladen
+[2025-04-06T03:59:15.002Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T03:59:15.003Z] [INFO] Archon Integration aktiviert
+[2025-04-06T03:59:15.003Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T03:59:15.003Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T03:59:15.027Z] [INFO] Konfiguration geladen
+[2025-04-06T03:59:41.418Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T03:59:41.419Z] [INFO] Archon Integration aktiviert
+[2025-04-06T03:59:41.419Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T03:59:41.419Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T03:59:41.444Z] [INFO] Konfiguration geladen
+[2025-04-06T04:00:54.038Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T04:00:54.038Z] [INFO] Archon Integration aktiviert
+[2025-04-06T04:00:54.038Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T04:00:54.038Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T04:00:54.058Z] [INFO] Konfiguration geladen
+[2025-04-06T18:57:25.443Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T18:57:25.443Z] [INFO] Archon Integration aktiviert
+[2025-04-06T18:57:25.444Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T18:57:25.444Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T18:57:25.485Z] [INFO] Konfiguration geladen
+[2025-04-06T19:00:46.698Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T19:00:46.698Z] [INFO] Archon Integration aktiviert
+[2025-04-06T19:00:46.698Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T19:00:46.699Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T19:00:46.727Z] [INFO] Konfiguration geladen
+[2025-04-06T19:01:51.899Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T19:01:51.899Z] [INFO] Archon Integration aktiviert
+[2025-04-06T19:01:51.899Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T19:01:51.900Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T19:01:51.926Z] [INFO] Konfiguration geladen
+[2025-04-06T19:02:22.956Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T19:02:22.956Z] [INFO] Archon Integration aktiviert
+[2025-04-06T19:02:22.957Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T19:02:22.957Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T19:02:22.984Z] [INFO] Konfiguration geladen
+[2025-04-06T19:05:31.254Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T19:05:31.254Z] [INFO] Archon Integration aktiviert
+[2025-04-06T19:05:31.254Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T19:05:31.254Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T19:05:31.279Z] [INFO] Konfiguration geladen
+[2025-04-06T19:05:52.023Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T19:05:52.024Z] [INFO] Archon Integration aktiviert
+[2025-04-06T19:05:52.024Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T19:05:52.024Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T19:05:52.057Z] [INFO] Konfiguration geladen
+[2025-04-06T19:10:13.140Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T19:10:13.140Z] [INFO] Archon Integration aktiviert
+[2025-04-06T19:10:13.141Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T19:10:13.141Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T19:10:13.167Z] [INFO] Konfiguration geladen
+[2025-04-06T19:10:37.711Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T19:10:37.711Z] [INFO] Archon Integration aktiviert
+[2025-04-06T19:10:37.711Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T19:10:37.712Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T19:10:37.741Z] [INFO] Konfiguration geladen
+[2025-04-06T19:11:35.703Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T19:11:35.704Z] [INFO] Archon Integration aktiviert
+[2025-04-06T19:11:35.704Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T19:11:35.704Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T19:11:35.746Z] [INFO] Konfiguration geladen
+[2025-04-06T19:14:23.675Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T19:14:23.676Z] [INFO] Archon Integration aktiviert
+[2025-04-06T19:14:23.676Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T19:14:23.676Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T19:14:23.700Z] [INFO] Konfiguration geladen
+[2025-04-06T19:14:59.943Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T19:14:59.943Z] [INFO] Archon Integration aktiviert
+[2025-04-06T19:14:59.943Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T19:14:59.943Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T19:14:59.982Z] [INFO] Konfiguration geladen
+[2025-04-06T19:24:37.908Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T19:24:37.909Z] [INFO] Archon Integration aktiviert
+[2025-04-06T19:24:37.909Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T19:24:37.909Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T19:24:37.940Z] [INFO] Konfiguration geladen
+[2025-04-06T19:30:43.473Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T19:30:43.473Z] [INFO] Archon Integration aktiviert
+[2025-04-06T19:30:43.474Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T19:30:43.474Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T19:30:43.536Z] [INFO] Konfiguration geladen
+[2025-04-06T19:31:35.653Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T19:31:35.654Z] [INFO] Archon Integration aktiviert
+[2025-04-06T19:31:35.654Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T19:31:35.654Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T19:31:35.680Z] [INFO] Konfiguration geladen
+[2025-04-06T19:32:40.037Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T19:32:40.038Z] [INFO] Archon Integration aktiviert
+[2025-04-06T19:32:40.038Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T19:32:40.038Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T19:32:40.059Z] [INFO] Konfiguration geladen
+[2025-04-06T19:35:37.913Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T19:35:37.914Z] [INFO] Archon Integration aktiviert
+[2025-04-06T19:35:37.915Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T19:35:37.915Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T19:35:37.957Z] [INFO] Konfiguration geladen
+[2025-04-06T19:49:29.417Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T19:49:29.417Z] [INFO] Archon Integration aktiviert
+[2025-04-06T19:49:29.417Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T19:49:29.417Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T19:49:29.448Z] [INFO] Konfiguration geladen
+[2025-04-06T19:57:08.329Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T19:57:08.330Z] [INFO] Archon Integration aktiviert
+[2025-04-06T19:57:08.330Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T19:57:08.330Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T19:57:08.357Z] [INFO] Konfiguration geladen
+[2025-04-06T19:59:04.454Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T19:59:04.455Z] [INFO] Archon Integration aktiviert
+[2025-04-06T19:59:04.455Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T19:59:04.455Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T19:59:04.494Z] [INFO] Konfiguration geladen
+[2025-04-06T20:31:03.080Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T20:31:03.081Z] [INFO] Archon Integration aktiviert
+[2025-04-06T20:31:03.081Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T20:31:03.081Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T20:31:03.114Z] [INFO] Konfiguration geladen
+[2025-04-06T20:41:50.162Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T20:41:50.163Z] [INFO] Archon Integration aktiviert
+[2025-04-06T20:41:50.163Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T20:41:50.163Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T20:41:50.199Z] [INFO] Konfiguration geladen
+[2025-04-06T20:42:17.177Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T20:42:17.177Z] [INFO] Archon Integration aktiviert
+[2025-04-06T20:42:17.177Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T20:42:17.177Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T20:42:17.208Z] [INFO] Konfiguration geladen
+[2025-04-06T20:47:55.099Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T20:47:55.103Z] [INFO] Archon Integration aktiviert
+[2025-04-06T20:47:55.103Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T20:47:55.103Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T20:47:55.133Z] [INFO] Konfiguration geladen
+[2025-04-06T20:48:19.902Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T20:48:19.903Z] [INFO] Archon Integration aktiviert
+[2025-04-06T20:48:19.903Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T20:48:19.903Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T20:48:19.926Z] [INFO] Konfiguration geladen
+[2025-04-06T20:48:38.436Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T20:48:38.437Z] [INFO] Archon Integration aktiviert
+[2025-04-06T20:48:38.437Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T20:48:38.441Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T20:48:38.472Z] [INFO] Konfiguration geladen
+[2025-04-06T20:51:42.543Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T20:51:42.544Z] [INFO] Archon Integration aktiviert
+[2025-04-06T20:51:42.544Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T20:51:42.544Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T20:51:42.577Z] [INFO] Konfiguration geladen
+[2025-04-06T21:00:43.847Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T21:00:43.848Z] [INFO] Archon Integration aktiviert
+[2025-04-06T21:00:43.848Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T21:00:43.848Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T21:00:43.880Z] [INFO] Konfiguration geladen
+[2025-04-06T21:00:48.838Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T21:00:48.838Z] [INFO] Archon Integration aktiviert
+[2025-04-06T21:00:48.838Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T21:00:48.838Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T21:00:48.872Z] [INFO] Konfiguration geladen
+[2025-04-06T21:01:37.509Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T21:01:37.510Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T21:01:37.510Z] [INFO] Archon Integration aktiviert
+[2025-04-06T21:01:37.510Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T21:01:37.547Z] [INFO] Konfiguration geladen
+[2025-04-06T21:02:42.265Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T21:02:42.265Z] [INFO] Archon Integration aktiviert
+[2025-04-06T21:02:42.266Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T21:02:42.266Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T21:02:42.286Z] [INFO] Konfiguration geladen
+[2025-04-06T21:03:55.911Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T21:03:55.912Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T21:03:55.912Z] [INFO] Archon Integration aktiviert
+[2025-04-06T21:03:55.912Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T21:03:55.954Z] [INFO] Konfiguration geladen
+[2025-04-06T21:07:41.480Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T21:07:41.481Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T21:07:41.481Z] [INFO] Archon Integration aktiviert
+[2025-04-06T21:07:41.481Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T21:07:41.552Z] [INFO] Konfiguration geladen
+[2025-04-06T21:08:22.835Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T21:08:22.835Z] [INFO] Archon Integration aktiviert
+[2025-04-06T21:08:22.835Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T21:08:22.835Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T21:08:22.862Z] [INFO] Konfiguration geladen
+[2025-04-06T21:09:07.472Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T21:09:07.473Z] [INFO] Archon Integration aktiviert
+[2025-04-06T21:09:07.473Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T21:09:07.473Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T21:09:07.497Z] [INFO] Konfiguration geladen
+[2025-04-06T21:13:10.312Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T21:13:10.313Z] [INFO] Archon Integration aktiviert
+[2025-04-06T21:13:10.313Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T21:13:10.315Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T21:13:10.361Z] [INFO] Konfiguration geladen
+[2025-04-06T21:15:04.679Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T21:15:04.679Z] [INFO] Archon Integration aktiviert
+[2025-04-06T21:15:04.679Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T21:15:04.679Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T21:15:04.711Z] [INFO] Konfiguration geladen
+[2025-04-06T21:15:47.514Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T21:15:47.514Z] [INFO] Archon Integration aktiviert
+[2025-04-06T21:15:47.514Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T21:15:47.514Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T21:15:47.528Z] [INFO] Konfiguration geladen
+[2025-04-06T21:16:23.034Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T21:16:23.034Z] [INFO] Archon Integration aktiviert
+[2025-04-06T21:16:23.035Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T21:16:23.035Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T21:16:23.051Z] [INFO] Konfiguration geladen
+[2025-04-06T21:17:01.065Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T21:17:01.065Z] [INFO] Archon Integration aktiviert
+[2025-04-06T21:17:01.065Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T21:17:01.066Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T21:17:01.099Z] [INFO] Konfiguration geladen
+[2025-04-06T21:17:24.932Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T21:17:24.932Z] [INFO] Archon Integration aktiviert
+[2025-04-06T21:17:24.933Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T21:17:24.933Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T21:17:24.954Z] [INFO] Konfiguration geladen
+[2025-04-06T21:17:54.900Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T21:17:54.900Z] [INFO] Archon Integration aktiviert
+[2025-04-06T21:17:54.900Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T21:17:54.900Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T21:17:54.936Z] [INFO] Konfiguration geladen
+[2025-04-06T21:29:26.420Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T21:29:26.420Z] [INFO] Archon Integration aktiviert
+[2025-04-06T21:29:26.421Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T21:29:26.421Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T21:29:26.439Z] [INFO] Konfiguration geladen
+[2025-04-06T21:31:13.382Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T21:31:13.383Z] [INFO] Archon Integration aktiviert
+[2025-04-06T21:31:13.383Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T21:31:13.383Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T21:31:13.402Z] [INFO] Konfiguration geladen
+[2025-04-06T21:34:19.422Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T21:34:19.424Z] [INFO] Archon Integration aktiviert
+[2025-04-06T21:34:19.424Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T21:34:19.424Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T21:34:19.460Z] [INFO] Konfiguration geladen
+[2025-04-06T21:35:01.850Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T21:35:01.851Z] [INFO] Archon Integration aktiviert
+[2025-04-06T21:35:01.851Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T21:35:01.851Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T21:35:01.865Z] [INFO] Konfiguration geladen
+[2025-04-06T21:37:21.210Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T21:37:21.210Z] [INFO] Archon Integration aktiviert
+[2025-04-06T21:37:21.210Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T21:37:21.210Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T21:37:21.234Z] [INFO] Konfiguration geladen
+[2025-04-06T21:38:26.883Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T21:38:26.884Z] [INFO] Archon Integration aktiviert
+[2025-04-06T21:38:26.884Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T21:38:26.884Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T21:38:26.911Z] [INFO] Konfiguration geladen
+[2025-04-06T21:40:03.461Z] [INFO] Archon Integration Service initialisiert
+[2025-04-06T21:40:03.462Z] [INFO] Archon Integration aktiviert
+[2025-04-06T21:40:03.462Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-06T21:40:03.462Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-06T21:40:03.487Z] [INFO] Konfiguration geladen
+[2025-04-07T08:11:34.027Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T08:11:34.027Z] [INFO] Archon Integration aktiviert
+[2025-04-07T08:11:34.027Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T08:11:34.028Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T08:11:34.047Z] [INFO] Konfiguration geladen
+[2025-04-07T08:13:54.506Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T08:13:54.506Z] [INFO] Archon Integration aktiviert
+[2025-04-07T08:13:54.506Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T08:13:54.507Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T08:13:54.524Z] [INFO] Konfiguration geladen
+[2025-04-07T08:14:13.621Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T08:14:13.622Z] [INFO] Archon Integration aktiviert
+[2025-04-07T08:14:13.622Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T08:14:13.622Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T08:14:13.655Z] [INFO] Konfiguration geladen
+[2025-04-07T08:15:11.650Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T08:15:11.651Z] [INFO] Archon Integration aktiviert
+[2025-04-07T08:15:11.651Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T08:15:11.651Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T08:15:11.694Z] [INFO] Konfiguration geladen
+[2025-04-07T08:15:48.339Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T08:15:48.340Z] [INFO] Archon Integration aktiviert
+[2025-04-07T08:15:48.340Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T08:15:48.340Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T08:15:48.362Z] [INFO] Konfiguration geladen
+[2025-04-07T08:16:45.177Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T08:16:45.178Z] [INFO] Archon Integration aktiviert
+[2025-04-07T08:16:45.178Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T08:16:45.178Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T08:16:45.219Z] [INFO] Konfiguration geladen
+[2025-04-07T08:37:47.517Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T08:37:47.518Z] [INFO] Archon Integration aktiviert
+[2025-04-07T08:37:47.518Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T08:37:47.518Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T08:37:47.550Z] [INFO] Konfiguration geladen
+[2025-04-07T08:39:07.791Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T08:39:07.791Z] [INFO] Archon Integration aktiviert
+[2025-04-07T08:39:07.791Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T08:39:07.792Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T08:39:07.843Z] [INFO] Konfiguration geladen
+[2025-04-07T08:40:41.776Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T08:40:41.776Z] [INFO] Archon Integration aktiviert
+[2025-04-07T08:40:41.777Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T08:40:41.777Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T08:40:41.813Z] [INFO] Konfiguration geladen
+[2025-04-07T08:47:52.469Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T08:47:52.470Z] [INFO] Archon Integration aktiviert
+[2025-04-07T08:47:52.470Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T08:47:52.470Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T08:47:52.494Z] [INFO] Konfiguration geladen
+[2025-04-07T08:48:35.835Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T08:48:35.836Z] [INFO] Archon Integration aktiviert
+[2025-04-07T08:48:35.836Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T08:48:35.836Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T08:48:35.868Z] [INFO] Konfiguration geladen
+[2025-04-07T08:57:35.782Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T08:57:35.783Z] [INFO] Archon Integration aktiviert
+[2025-04-07T08:57:35.783Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T08:57:35.783Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T08:57:35.827Z] [INFO] Konfiguration geladen
+[2025-04-07T08:57:59.307Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T08:57:59.307Z] [INFO] Archon Integration aktiviert
+[2025-04-07T08:57:59.307Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T08:57:59.308Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T08:57:59.333Z] [INFO] Konfiguration geladen
+[2025-04-07T09:07:57.171Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T09:07:57.171Z] [INFO] Archon Integration aktiviert
+[2025-04-07T09:07:57.171Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T09:07:57.172Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T09:07:57.197Z] [INFO] Konfiguration geladen
+[2025-04-07T09:09:05.817Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T09:09:05.818Z] [INFO] Archon Integration aktiviert
+[2025-04-07T09:09:05.818Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T09:09:05.818Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T09:09:05.853Z] [INFO] Konfiguration geladen
+[2025-04-07T09:09:52.027Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T09:09:52.027Z] [INFO] Archon Integration aktiviert
+[2025-04-07T09:09:52.027Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T09:09:52.028Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T09:09:52.069Z] [INFO] Konfiguration geladen
+[2025-04-07T09:10:46.020Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T09:10:46.021Z] [INFO] Archon Integration aktiviert
+[2025-04-07T09:10:46.021Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T09:10:46.021Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T09:10:46.046Z] [INFO] Konfiguration geladen
+[2025-04-07T09:20:13.796Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T09:20:13.797Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T09:20:13.796Z] [INFO] Archon Integration aktiviert
+[2025-04-07T09:20:13.796Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T09:20:13.823Z] [INFO] Konfiguration geladen
+[2025-04-07T09:20:52.255Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T09:20:52.256Z] [INFO] Archon Integration aktiviert
+[2025-04-07T09:20:52.256Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T09:20:52.256Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T09:20:52.285Z] [INFO] Konfiguration geladen
+[2025-04-07T09:21:14.262Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T09:21:14.263Z] [INFO] Archon Integration aktiviert
+[2025-04-07T09:21:14.263Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T09:21:14.263Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T09:21:14.287Z] [INFO] Konfiguration geladen
+[2025-04-07T09:23:56.110Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T09:23:56.110Z] [INFO] Archon Integration aktiviert
+[2025-04-07T09:23:56.111Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T09:23:56.111Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T09:23:56.141Z] [INFO] Konfiguration geladen
+[2025-04-07T09:24:15.767Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T09:24:15.768Z] [INFO] Archon Integration aktiviert
+[2025-04-07T09:24:15.768Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T09:24:15.768Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T09:24:15.795Z] [INFO] Konfiguration geladen
+[2025-04-07T09:25:53.485Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T09:25:53.485Z] [INFO] Archon Integration aktiviert
+[2025-04-07T09:25:53.485Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T09:25:53.486Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T09:25:53.506Z] [INFO] Konfiguration geladen
+[2025-04-07T09:26:29.647Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T09:26:29.648Z] [INFO] Archon Integration aktiviert
+[2025-04-07T09:26:29.648Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T09:26:29.648Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T09:26:29.690Z] [INFO] Konfiguration geladen
+[2025-04-07T09:27:39.132Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T09:27:39.133Z] [INFO] Archon Integration aktiviert
+[2025-04-07T09:27:39.133Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T09:27:39.133Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T09:27:39.160Z] [INFO] Konfiguration geladen
+[2025-04-07T09:29:37.206Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T09:29:37.206Z] [INFO] Archon Integration aktiviert
+[2025-04-07T09:29:37.206Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T09:29:37.206Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T09:29:37.233Z] [INFO] Konfiguration geladen
+[2025-04-07T09:29:56.625Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T09:29:56.626Z] [INFO] Archon Integration aktiviert
+[2025-04-07T09:29:56.626Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T09:29:56.626Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T09:29:56.659Z] [INFO] Konfiguration geladen
+[2025-04-07T09:30:25.662Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T09:30:25.662Z] [INFO] Archon Integration aktiviert
+[2025-04-07T09:30:25.662Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T09:30:25.663Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T09:30:25.691Z] [INFO] Konfiguration geladen
+[2025-04-07T10:02:19.012Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T10:02:19.012Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T10:02:19.012Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T10:02:19.012Z] [INFO] Archon Integration aktiviert
+[2025-04-07T10:02:19.038Z] [INFO] Konfiguration geladen
+[2025-04-07T10:08:44.881Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T10:08:44.882Z] [INFO] Archon Integration aktiviert
+[2025-04-07T10:08:44.882Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T10:08:44.882Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T10:08:44.920Z] [INFO] Konfiguration geladen
+[2025-04-07T10:09:47.823Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T10:09:47.823Z] [INFO] Archon Integration aktiviert
+[2025-04-07T10:09:47.823Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T10:09:47.823Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T10:09:47.860Z] [INFO] Konfiguration geladen
+[2025-04-07T10:12:20.758Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T10:12:20.758Z] [INFO] Archon Integration aktiviert
+[2025-04-07T10:12:20.759Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T10:12:20.759Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T10:12:20.780Z] [INFO] Konfiguration geladen
+[2025-04-07T10:12:51.788Z] [INFO] Archon Integration aktiviert
+[2025-04-07T10:12:51.788Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T10:12:51.788Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T10:12:51.789Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T10:12:51.816Z] [INFO] Konfiguration geladen
+[2025-04-07T10:19:00.005Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T10:19:00.006Z] [INFO] Archon Integration aktiviert
+[2025-04-07T10:19:00.006Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T10:19:00.006Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T10:19:00.045Z] [INFO] Konfiguration geladen
+[2025-04-07T10:35:50.488Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T10:35:50.488Z] [INFO] Archon Integration aktiviert
+[2025-04-07T10:35:50.488Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T10:35:50.488Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T10:35:50.511Z] [INFO] Konfiguration geladen
+[2025-04-07T10:36:32.448Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T10:36:32.448Z] [INFO] Archon Integration aktiviert
+[2025-04-07T10:36:32.449Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T10:36:32.449Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T10:36:32.472Z] [INFO] Konfiguration geladen
+[2025-04-07T11:27:40.682Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T11:27:40.721Z] [INFO] Konfiguration geladen
+[2025-04-07T11:27:40.683Z] [INFO] Archon Integration aktiviert
+[2025-04-07T11:27:40.683Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T11:27:40.683Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T13:00:03.051Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T13:00:03.051Z] [INFO] Archon Integration aktiviert
+[2025-04-07T13:00:03.052Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T13:00:03.052Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T13:00:03.078Z] [INFO] Konfiguration geladen
+[2025-04-07T13:01:00.787Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T13:01:00.787Z] [INFO] Archon Integration aktiviert
+[2025-04-07T13:01:00.787Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T13:01:00.788Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T13:01:00.810Z] [INFO] Konfiguration geladen
+[2025-04-07T13:16:41.494Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T13:16:41.496Z] [INFO] Archon Integration aktiviert
+[2025-04-07T13:16:41.500Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T13:16:41.501Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T13:16:41.536Z] [INFO] Konfiguration geladen
+[2025-04-07T13:26:21.064Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T13:26:21.065Z] [INFO] Archon Integration aktiviert
+[2025-04-07T13:26:21.065Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T13:26:21.065Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T13:26:21.093Z] [INFO] Konfiguration geladen
+[2025-04-07T13:33:19.623Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T13:33:19.623Z] [INFO] Archon Integration aktiviert
+[2025-04-07T13:33:19.623Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T13:33:19.623Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T13:33:19.653Z] [INFO] Konfiguration geladen
+[2025-04-07T13:36:33.414Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T13:36:33.414Z] [INFO] Archon Integration aktiviert
+[2025-04-07T13:36:33.414Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T13:36:33.415Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T13:36:33.454Z] [INFO] Konfiguration geladen
+[2025-04-07T13:37:53.422Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T13:37:53.422Z] [INFO] Archon Integration aktiviert
+[2025-04-07T13:37:53.423Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T13:37:53.423Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T13:37:53.453Z] [INFO] Konfiguration geladen
+[2025-04-07T13:58:47.036Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T13:58:47.036Z] [INFO] Archon Integration aktiviert
+[2025-04-07T13:58:47.036Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T13:58:47.036Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T13:58:47.064Z] [INFO] Konfiguration geladen
+[2025-04-07T13:59:22.339Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T13:59:22.339Z] [INFO] Archon Integration aktiviert
+[2025-04-07T13:59:22.340Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T13:59:22.340Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T13:59:22.372Z] [INFO] Konfiguration geladen
+[2025-04-07T14:08:00.101Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T14:08:00.101Z] [INFO] Archon Integration aktiviert
+[2025-04-07T14:08:00.102Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T14:08:00.102Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T14:08:00.129Z] [INFO] Konfiguration geladen
+[2025-04-07T14:22:30.068Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T14:22:30.069Z] [INFO] Archon Integration aktiviert
+[2025-04-07T14:22:30.069Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T14:22:30.069Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T14:22:30.094Z] [INFO] Konfiguration geladen
+[2025-04-07T14:30:50.558Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T14:30:50.559Z] [INFO] Archon Integration aktiviert
+[2025-04-07T14:30:50.559Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T14:30:50.559Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T14:30:50.596Z] [INFO] Konfiguration geladen
+[2025-04-07T14:33:56.264Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T14:33:56.265Z] [INFO] Archon Integration aktiviert
+[2025-04-07T14:33:56.265Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T14:33:56.265Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T14:33:56.297Z] [INFO] Konfiguration geladen
+[2025-04-07T14:40:04.755Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T14:40:04.755Z] [INFO] Archon Integration aktiviert
+[2025-04-07T14:40:04.756Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T14:40:04.756Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T14:40:04.775Z] [INFO] Konfiguration geladen
+[2025-04-07T14:41:10.863Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T14:41:10.864Z] [INFO] Archon Integration aktiviert
+[2025-04-07T14:41:10.864Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T14:41:10.864Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T14:41:10.896Z] [INFO] Konfiguration geladen
+[2025-04-07T14:47:38.970Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T14:47:38.971Z] [INFO] Archon Integration aktiviert
+[2025-04-07T14:47:38.971Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T14:47:38.971Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T14:47:39.012Z] [INFO] Konfiguration geladen
+[2025-04-07T14:48:34.898Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T14:48:34.898Z] [INFO] Archon Integration aktiviert
+[2025-04-07T14:48:34.898Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T14:48:34.898Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T14:48:34.914Z] [INFO] Konfiguration geladen
+[2025-04-07T14:51:51.810Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T14:51:51.811Z] [INFO] Archon Integration aktiviert
+[2025-04-07T14:51:51.811Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T14:51:51.811Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T14:51:51.833Z] [INFO] Konfiguration geladen
+[2025-04-07T14:53:44.536Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T14:53:44.536Z] [INFO] Archon Integration aktiviert
+[2025-04-07T14:53:44.536Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T14:53:44.537Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T14:53:44.569Z] [INFO] Konfiguration geladen
+[2025-04-07T14:54:48.544Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T14:54:48.544Z] [INFO] Archon Integration aktiviert
+[2025-04-07T14:54:48.544Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T14:54:48.545Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T14:54:48.573Z] [INFO] Konfiguration geladen
+[2025-04-07T14:57:18.833Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T14:57:18.833Z] [INFO] Archon Integration aktiviert
+[2025-04-07T14:57:18.833Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T14:57:18.833Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T14:57:18.882Z] [INFO] Konfiguration geladen
+[2025-04-07T14:58:04.836Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T14:58:04.836Z] [INFO] Archon Integration aktiviert
+[2025-04-07T14:58:04.836Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T14:58:04.836Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T14:58:04.856Z] [INFO] Konfiguration geladen
+[2025-04-07T15:00:52.559Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T15:00:52.559Z] [INFO] Archon Integration aktiviert
+[2025-04-07T15:00:52.559Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T15:00:52.561Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T15:00:52.583Z] [INFO] Konfiguration geladen
+[2025-04-07T15:01:18.664Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T15:01:18.665Z] [INFO] Archon Integration aktiviert
+[2025-04-07T15:01:18.665Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T15:01:18.666Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T15:01:18.706Z] [INFO] Konfiguration geladen
+[2025-04-07T15:02:00.119Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T15:02:00.120Z] [INFO] Archon Integration aktiviert
+[2025-04-07T15:02:00.120Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T15:02:00.121Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T15:02:00.151Z] [INFO] Konfiguration geladen
+[2025-04-07T15:04:30.283Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T15:04:30.283Z] [INFO] Archon Integration aktiviert
+[2025-04-07T15:04:30.284Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T15:04:30.284Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T15:04:30.316Z] [INFO] Konfiguration geladen
+[2025-04-07T15:06:53.857Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T15:06:53.858Z] [INFO] Archon Integration aktiviert
+[2025-04-07T15:06:53.858Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T15:06:53.861Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T15:06:53.892Z] [INFO] Konfiguration geladen
+[2025-04-07T15:10:03.936Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T15:10:03.937Z] [INFO] Archon Integration aktiviert
+[2025-04-07T15:10:03.937Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T15:10:03.937Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T15:10:03.958Z] [INFO] Konfiguration geladen
+[2025-04-07T15:10:57.424Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T15:10:57.424Z] [INFO] Archon Integration aktiviert
+[2025-04-07T15:10:57.426Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T15:10:57.426Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T15:10:57.463Z] [INFO] Konfiguration geladen
+[2025-04-07T15:15:43.620Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T15:15:43.621Z] [INFO] Archon Integration aktiviert
+[2025-04-07T15:15:43.621Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T15:15:43.621Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T15:15:43.667Z] [INFO] Konfiguration geladen
+[2025-04-07T15:16:16.878Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T15:16:16.879Z] [INFO] Archon Integration aktiviert
+[2025-04-07T15:16:16.879Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T15:16:16.880Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T15:16:16.913Z] [INFO] Konfiguration geladen
+[2025-04-07T15:16:45.615Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T15:16:45.616Z] [INFO] Archon Integration aktiviert
+[2025-04-07T15:16:45.619Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T15:16:45.620Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T15:16:45.646Z] [INFO] Konfiguration geladen
+[2025-04-07T15:28:39.502Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T15:28:39.502Z] [INFO] Archon Integration aktiviert
+[2025-04-07T15:28:39.503Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T15:28:39.503Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T15:28:39.540Z] [INFO] Konfiguration geladen
+[2025-04-07T15:38:21.855Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T15:38:21.856Z] [INFO] Archon Integration aktiviert
+[2025-04-07T15:38:21.856Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T15:38:21.856Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T15:38:21.900Z] [INFO] Konfiguration geladen
+[2025-04-07T15:38:41.441Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T15:38:41.442Z] [INFO] Archon Integration aktiviert
+[2025-04-07T15:38:41.442Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T15:38:41.442Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T15:38:41.467Z] [INFO] Konfiguration geladen
+[2025-04-07T15:39:33.548Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T15:39:33.548Z] [INFO] Archon Integration aktiviert
+[2025-04-07T15:39:33.548Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T15:39:33.548Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T15:39:33.576Z] [INFO] Konfiguration geladen
+[2025-04-07T17:15:56.320Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T17:15:56.321Z] [INFO] Archon Integration aktiviert
+[2025-04-07T17:15:56.321Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T17:15:56.321Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T17:15:56.341Z] [INFO] Konfiguration geladen
+[2025-04-07T17:17:21.901Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T17:17:21.901Z] [INFO] Archon Integration aktiviert
+[2025-04-07T17:17:21.901Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T17:17:21.902Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T17:17:21.940Z] [INFO] Konfiguration geladen
+[2025-04-07T17:18:32.648Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T17:18:32.648Z] [INFO] Archon Integration aktiviert
+[2025-04-07T17:18:32.648Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T17:18:32.648Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T17:18:32.669Z] [INFO] Konfiguration geladen
+[2025-04-07T17:19:57.826Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T17:19:57.826Z] [INFO] Archon Integration aktiviert
+[2025-04-07T17:19:57.827Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T17:19:57.826Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T17:19:57.860Z] [INFO] Konfiguration geladen
+[2025-04-07T17:23:02.053Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T17:23:02.054Z] [INFO] Archon Integration aktiviert
+[2025-04-07T17:23:02.054Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T17:23:02.054Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T17:23:02.093Z] [INFO] Konfiguration geladen
+[2025-04-07T17:24:21.832Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T17:24:21.832Z] [INFO] Archon Integration aktiviert
+[2025-04-07T17:24:21.832Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T17:24:21.833Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T17:24:21.857Z] [INFO] Konfiguration geladen
+[2025-04-07T17:24:58.935Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T17:24:58.936Z] [INFO] Archon Integration aktiviert
+[2025-04-07T17:24:58.936Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T17:24:58.936Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T17:24:58.975Z] [INFO] Konfiguration geladen
+[2025-04-07T17:25:23.526Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T17:25:23.527Z] [INFO] Archon Integration aktiviert
+[2025-04-07T17:25:23.527Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T17:25:23.527Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T17:25:23.547Z] [INFO] Konfiguration geladen
+[2025-04-07T17:26:22.477Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T17:26:22.478Z] [INFO] Archon Integration aktiviert
+[2025-04-07T17:26:22.478Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T17:26:22.478Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T17:26:22.517Z] [INFO] Konfiguration geladen
+[2025-04-07T17:27:02.941Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T17:27:02.941Z] [INFO] Archon Integration aktiviert
+[2025-04-07T17:27:02.942Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T17:27:02.942Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T17:27:02.960Z] [INFO] Konfiguration geladen
+[2025-04-07T17:29:31.071Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T17:29:31.071Z] [INFO] Archon Integration aktiviert
+[2025-04-07T17:29:31.071Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T17:29:31.072Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T17:29:31.094Z] [INFO] Konfiguration geladen
+[2025-04-07T17:29:40.833Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T17:29:40.833Z] [INFO] Archon Integration aktiviert
+[2025-04-07T17:29:40.834Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T17:29:40.834Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T17:29:40.873Z] [INFO] Konfiguration geladen
+[2025-04-07T17:30:06.878Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T17:30:06.878Z] [INFO] Archon Integration aktiviert
+[2025-04-07T17:30:06.878Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T17:30:06.878Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T17:30:06.899Z] [INFO] Konfiguration geladen
+[2025-04-07T17:30:17.017Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T17:30:17.018Z] [INFO] Archon Integration aktiviert
+[2025-04-07T17:30:17.018Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T17:30:17.018Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T17:30:17.046Z] [INFO] Konfiguration geladen
+[2025-04-07T17:31:46.215Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T17:31:46.218Z] [INFO] Archon Integration aktiviert
+[2025-04-07T17:31:46.218Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T17:31:46.219Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T17:31:46.235Z] [INFO] Konfiguration geladen
+[2025-04-07T17:31:54.199Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T17:31:54.199Z] [INFO] Archon Integration aktiviert
+[2025-04-07T17:31:54.199Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T17:31:54.200Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T17:31:54.224Z] [INFO] Konfiguration geladen
+[2025-04-07T17:32:24.187Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T17:32:24.188Z] [INFO] Archon Integration aktiviert
+[2025-04-07T17:32:24.191Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T17:32:24.191Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T17:32:24.239Z] [INFO] Konfiguration geladen
+[2025-04-07T17:32:32.566Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T17:32:32.567Z] [INFO] Archon Integration aktiviert
+[2025-04-07T17:32:32.567Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T17:32:32.567Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T17:32:32.593Z] [INFO] Konfiguration geladen
+[2025-04-07T17:33:05.767Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T17:33:05.768Z] [INFO] Archon Integration aktiviert
+[2025-04-07T17:33:05.768Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T17:33:05.768Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T17:33:05.781Z] [INFO] Konfiguration geladen
+[2025-04-07T17:33:14.671Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T17:33:14.672Z] [INFO] Archon Integration aktiviert
+[2025-04-07T17:33:14.672Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T17:33:14.672Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T17:33:14.711Z] [INFO] Konfiguration geladen
+[2025-04-07T17:34:07.674Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T17:34:07.675Z] [INFO] Archon Integration aktiviert
+[2025-04-07T17:34:07.675Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T17:34:07.675Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T17:34:07.707Z] [INFO] Konfiguration geladen
+[2025-04-07T17:34:16.816Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T17:34:16.816Z] [INFO] Archon Integration aktiviert
+[2025-04-07T17:34:16.817Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T17:34:16.817Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T17:34:16.841Z] [INFO] Konfiguration geladen
+[2025-04-07T17:34:55.655Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T17:34:55.655Z] [INFO] Archon Integration aktiviert
+[2025-04-07T17:34:55.656Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T17:34:55.656Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T17:34:55.696Z] [INFO] Konfiguration geladen
+[2025-04-07T17:35:03.513Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T17:35:03.514Z] [INFO] Archon Integration aktiviert
+[2025-04-07T17:35:03.514Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T17:35:03.514Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T17:35:03.543Z] [INFO] Konfiguration geladen
+[2025-04-07T17:46:20.449Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T17:46:20.450Z] [INFO] Archon Integration aktiviert
+[2025-04-07T17:46:20.450Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T17:46:20.450Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T17:46:20.487Z] [INFO] Konfiguration geladen
+[2025-04-07T17:46:29.579Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T17:46:29.579Z] [INFO] Archon Integration aktiviert
+[2025-04-07T17:46:29.579Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T17:46:29.580Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T17:46:29.603Z] [INFO] Konfiguration geladen
+[2025-04-07T17:50:30.171Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T17:50:30.172Z] [INFO] Archon Integration aktiviert
+[2025-04-07T17:50:30.172Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T17:50:30.172Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T17:50:30.196Z] [INFO] Konfiguration geladen
+[2025-04-07T17:50:39.423Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T17:50:39.424Z] [INFO] Archon Integration aktiviert
+[2025-04-07T17:50:39.424Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T17:50:39.424Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T17:50:39.452Z] [INFO] Konfiguration geladen
+[2025-04-07T18:06:54.935Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T18:06:54.936Z] [INFO] Archon Integration aktiviert
+[2025-04-07T18:06:54.936Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T18:06:54.936Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T18:06:54.975Z] [INFO] Konfiguration geladen
+[2025-04-07T18:07:16.830Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T18:07:16.831Z] [INFO] Archon Integration aktiviert
+[2025-04-07T18:07:16.831Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T18:07:16.832Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T18:07:16.877Z] [INFO] Konfiguration geladen
+[2025-04-07T18:07:38.160Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T18:07:38.161Z] [INFO] Archon Integration aktiviert
+[2025-04-07T18:07:38.162Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T18:07:38.162Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T18:07:38.186Z] [INFO] Konfiguration geladen
+[2025-04-07T22:09:48.141Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T22:09:48.141Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T22:09:48.141Z] [INFO] Archon Integration aktiviert
+[2025-04-07T22:09:48.141Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T22:09:48.155Z] [INFO] Konfiguration geladen
+[2025-04-07T22:30:54.160Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T22:30:54.161Z] [INFO] Archon Integration aktiviert
+[2025-04-07T22:30:54.161Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T22:30:54.161Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T22:30:54.176Z] [INFO] Konfiguration geladen
+[2025-04-07T22:38:20.797Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T22:38:20.797Z] [INFO] Archon Integration aktiviert
+[2025-04-07T22:38:20.797Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T22:38:20.798Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T22:38:20.824Z] [INFO] Konfiguration geladen
+[2025-04-07T22:39:34.067Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T22:39:34.068Z] [INFO] Archon Integration aktiviert
+[2025-04-07T22:39:34.068Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T22:39:34.068Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T22:39:34.101Z] [INFO] Konfiguration geladen
+[2025-04-07T22:42:29.503Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T22:42:29.504Z] [INFO] Archon Integration aktiviert
+[2025-04-07T22:42:29.504Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T22:42:29.504Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T22:42:29.538Z] [INFO] Konfiguration geladen
+[2025-04-07T22:43:54.888Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T22:43:54.889Z] [INFO] Archon Integration aktiviert
+[2025-04-07T22:43:54.889Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T22:43:54.889Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T22:43:54.919Z] [INFO] Konfiguration geladen
+[2025-04-07T22:45:55.766Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T22:45:55.767Z] [INFO] Archon Integration aktiviert
+[2025-04-07T22:45:55.767Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T22:45:55.767Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T22:45:55.783Z] [INFO] Konfiguration geladen
+[2025-04-07T22:46:27.430Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T22:46:27.430Z] [INFO] Archon Integration aktiviert
+[2025-04-07T22:46:27.431Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T22:46:27.430Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T22:46:27.461Z] [INFO] Konfiguration geladen
+[2025-04-07T22:47:38.130Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T22:47:38.131Z] [INFO] Archon Integration aktiviert
+[2025-04-07T22:47:38.131Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T22:47:38.131Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T22:47:38.163Z] [INFO] Konfiguration geladen
+[2025-04-07T22:48:32.033Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T22:48:32.033Z] [INFO] Archon Integration aktiviert
+[2025-04-07T22:48:32.033Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T22:48:32.033Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T22:48:32.048Z] [INFO] Konfiguration geladen
+[2025-04-07T23:09:27.784Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T23:09:27.785Z] [INFO] Archon Integration aktiviert
+[2025-04-07T23:09:27.785Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T23:09:27.785Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T23:09:27.821Z] [INFO] Konfiguration geladen
+[2025-04-07T23:15:28.284Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T23:15:28.285Z] [INFO] Archon Integration aktiviert
+[2025-04-07T23:15:28.285Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T23:15:28.285Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T23:15:28.316Z] [INFO] Konfiguration geladen
+[2025-04-07T23:15:47.722Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T23:15:47.724Z] [INFO] Archon Integration aktiviert
+[2025-04-07T23:15:47.724Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T23:15:47.724Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T23:15:47.747Z] [INFO] Konfiguration geladen
+[2025-04-07T23:17:05.972Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T23:17:05.973Z] [INFO] Archon Integration aktiviert
+[2025-04-07T23:17:05.973Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T23:17:05.973Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T23:17:06.006Z] [INFO] Konfiguration geladen
+[2025-04-07T23:46:34.441Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T23:46:34.442Z] [INFO] Archon Integration aktiviert
+[2025-04-07T23:46:34.442Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T23:46:34.442Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T23:46:34.463Z] [INFO] Konfiguration geladen
+[2025-04-07T23:47:45.781Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T23:47:45.781Z] [INFO] Archon Integration aktiviert
+[2025-04-07T23:47:45.781Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T23:47:45.781Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T23:47:45.804Z] [INFO] Konfiguration geladen
+[2025-04-07T23:49:27.112Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T23:49:27.113Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T23:49:27.113Z] [INFO] Archon Integration aktiviert
+[2025-04-07T23:49:27.113Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T23:49:27.157Z] [INFO] Konfiguration geladen
+[2025-04-07T23:49:49.965Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T23:49:49.965Z] [INFO] Archon Integration aktiviert
+[2025-04-07T23:49:49.965Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T23:49:49.966Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T23:49:49.997Z] [INFO] Konfiguration geladen
+[2025-04-07T23:51:23.301Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T23:51:23.301Z] [INFO] Archon Integration aktiviert
+[2025-04-07T23:51:23.301Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T23:51:23.301Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T23:51:23.322Z] [INFO] Konfiguration geladen
+[2025-04-07T23:52:58.016Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T23:52:58.017Z] [INFO] Archon Integration aktiviert
+[2025-04-07T23:52:58.017Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T23:52:58.017Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T23:52:58.051Z] [INFO] Konfiguration geladen
+[2025-04-07T23:54:54.830Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T23:54:54.830Z] [INFO] Archon Integration aktiviert
+[2025-04-07T23:54:54.830Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T23:54:54.830Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T23:54:54.857Z] [INFO] Konfiguration geladen
+[2025-04-07T23:56:10.951Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T23:56:10.951Z] [INFO] Archon Integration aktiviert
+[2025-04-07T23:56:10.952Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T23:56:10.952Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T23:56:10.989Z] [INFO] Konfiguration geladen
+[2025-04-07T23:58:49.549Z] [INFO] Archon Integration Service initialisiert
+[2025-04-07T23:58:49.549Z] [INFO] Archon Integration aktiviert
+[2025-04-07T23:58:49.549Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-07T23:58:49.549Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-07T23:58:49.583Z] [INFO] Konfiguration geladen
+[2025-04-08T00:00:27.684Z] [INFO] Archon Integration Service initialisiert
+[2025-04-08T00:00:27.685Z] [INFO] Archon Integration aktiviert
+[2025-04-08T00:00:27.685Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-08T00:00:27.685Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-08T00:00:27.731Z] [INFO] Konfiguration geladen
+[2025-04-08T00:16:57.204Z] [INFO] Archon Integration Service initialisiert
+[2025-04-08T00:16:57.204Z] [INFO] Archon Integration aktiviert
+[2025-04-08T00:16:57.205Z] [INFO] Event: system - {"action":"activate","status":"success"}
+[2025-04-08T00:16:57.205Z] [INFO] System-Event: {"action":"activate","status":"success"}
+[2025-04-08T00:16:57.249Z] [INFO] Konfiguration geladen
