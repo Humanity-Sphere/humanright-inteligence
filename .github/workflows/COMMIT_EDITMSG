@@ -1,0 +1,82 @@
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch main
+# Changes to be committed:
+#	new file:   .config/eas-cli-nodejs/user-settings.json
+#	new file:   .env
+#	modified:   .gitignore
+#	new file:   .vscode/extensions.json
+#	modified:   .vscode/settings.json
+#	new file:   README-HANDBUCH/BENUTZERHANDBUCH.md
+#	new file:   README-HANDBUCH/BUILD_EXE_ANLEITUNG.md
+#	new file:   README-HANDBUCH/DEPLOYMENT-GUIDE.md
+#	new file:   README-HANDBUCH/DEPLOYMENT_ANLEITUNG.md
+#	new file:   README-HANDBUCH/DOWNLOAD_ANLEITUNG.md
+#	new file:   README-HANDBUCH/FUNKTIONSBESCHREIBUNG.md
+#	new file:   README-HANDBUCH/INTEGRATIONEN.md
+#	new file:   README-HANDBUCH/LOKALE_INSTALLATION.md
+#	new file:   README-HANDBUCH/PINOCCHIO_ANLEITUNG.md
+#	new file:   README-HANDBUCH/README.md
+#	new file:   README-HANDBUCH/TECHNISCHE_IMPLEMENTIERUNG.md
+#	new file:   README-HANDBUCH/UI_UX_DESIGN.md
+#	new file:   archon_integration.log
+#	deleted:    attached_assets/Dokumentation von Menschenrechtsverletzungen - Fall Juljan Raja Ploreit (1).md
+#	deleted:    attached_assets/Dokumentation von Menschenrechtsverletzungen - Fall Juljan Raja Ploreit test.gdoc
+#	deleted:    attached_assets/Ereigniskette der systematischen Menschenrechtsverletzungen in Bad Nenndorf.md
+#	deleted:    attached_assets/HURIDOCS Akt-Standardformat - Dokumentation Polizeieinsatz vom 27.10.2022.md
+#	deleted:    "attached_assets/HURIDOCS Beteiligungsformat - Dokumentation Beh\303\266rdliche Handlungen 2021-2024.md"
+#	deleted:    attached_assets/aufgaben doc 01jrp.md
+#	deleted:    attached_assets/content-1743077550933.md
+#	modified:   auto-setup.js
+#	modified:   build-all-platforms.sh
+#	modified:   build-mobile-apk.sh
+#	modified:   build-windows-exe.sh
+#	modified:   data/optimization-suggestions.json
+#	modified:   data/performance-metrics.json
+#	modified:   electron-builder.yml
+#	modified:   local-data/documents/1.json
+#	modified:   local-data/documents/2.json
+#	modified:   mobile-app/qr-generator.cjs
+#	modified:   temp_repos/PraisonAI/praisonai/setup/setup_conda_env.sh
+#	modified:   temp_repos/kotaemon/launch.sh
+#	modified:   temp_repos/kotaemon/scripts/run_linux.sh
+#	modified:   temp_repos/kotaemon/scripts/run_macos.sh
+#	modified:   temp_repos/kotaemon/scripts/server_llamacpp_linux.sh
+#	modified:   temp_repos/kotaemon/scripts/server_llamacpp_macos.sh
+#	deleted:    temp_repos/uwazi/cypress/e2e/__image_snapshots__/Entities  supporting files and main documents  Entity with main documents  should create a reference from main document #0.png
+#	deleted:    temp_repos/uwazi/cypress/e2e/pages/__image_snapshots__/Public Form  public form with image and media files  should revisit the page and fill the text, select and date fields #0.png
+#	modified:   temp_repos/uwazi/database/admin_user.sh
+#	modified:   temp_repos/uwazi/database/blank_state.sh
+#	modified:   temp_repos/uwazi/database/dump_blank_state.sh
+#	modified:   temp_repos/uwazi/database/dump_db.sh
+#	modified:   temp_repos/uwazi/database/dump_sync_state.sh
+#	modified:   temp_repos/uwazi/database/ix_config.sh
+#	modified:   temp_repos/uwazi/database/restore_db.sh
+#	modified:   temp_repos/uwazi/database/sync_state.sh
+#	modified:   temp_repos/uwazi/database/tc-autoaccept.sh
+#	deleted:    temp_repos/uwazi/e2e/mobile/__image_snapshots__/library-test-ts-library-toolbar-and-action-buttons-should-adjust-the-distribution-of-elements-for-a-medium-resolution-1-snap.png
+#	deleted:    temp_repos/uwazi/e2e/mobile/__image_snapshots__/library-test-ts-library-toolbar-and-action-buttons-small-resolution-should-hide-the-toolbar-and-actions-buttons-by-default-1-snap.png
+#	deleted:    temp_repos/uwazi/e2e/mobile/__image_snapshots__/library-test-ts-library-toolbar-and-action-buttons-small-resolution-should-open-the-toolbar-and-actions-buttons-on-demand-1-snap.png
+#	deleted:    temp_repos/uwazi/e2e/suite2/__image_snapshots__/translate-test-ts-translations-live-translate-should-keep-all-side-panel-content-visible-after-translation-including-last-button-1-snap.png
+#	modified:   temp_repos/uwazi/run
+#	modified:   temp_repos/uwazi/scripts/merge_and_bump_production.sh
+#	modified:   temp_repos/uwazi/scripts/merge_and_bump_staging.sh
+#	modified:   temp_repos/uwazi/scripts/pre-release.sh
+#	modified:   temp_repos/uwazi/scripts/release.sh
+#	modified:   temp_repos/uwazi/scripts/test_blank_state.sh
+#	modified:   temp_repos/uwazi/scripts/testing-release.sh
+#	modified:   temp_repos/uwazi/uwazi-fixtures/dump.sh
+#	modified:   temp_repos/uwazi/uwazi-fixtures/restore.sh
+#	modified:   temp_repos/uwazi/webpack/build.sh
+#
+# Changes not staged for commit:
+#	modified:   .vscode/launch.json
+#	modified:   auto-setup.js
+#	modified:   tsconfig.json
+#
+# Untracked files:
+#	.windsurfrules
+#	crypto-js.d.ts
+#
