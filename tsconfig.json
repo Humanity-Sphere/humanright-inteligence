@@ -1,40 +1,20 @@
 {
-  "include": [
-    "client/src/**/*",
-    "shared/**/*",
-    "server/**/*"
-  ],
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "allowJs": true,
+    "esModuleInterop": true,
+    "jsx": "react-native",
+    "lib": ["DOM", "ESNext"],
+    "moduleResolution": "node",
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "target": "ESNext"
+  },
   "exclude": [
     "node_modules",
-    "build",
-    "dist",
-    "**/*.test.ts"
-  ],
-  "compilerOptions": {
-    "incremental": true,
-    "tsBuildInfoFile": "./node_modules/typescript/tsbuildinfo",
-    "noEmit": true,
-    "module": "ESNext",
-    "target": "ES2015",
-    "strict": true,
-    "lib": [
-      "esnext",
-      "dom",
-      "dom.iterable"
-    ],
-    "jsx": "preserve",
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "allowImportingTsExtensions": true,
-    "moduleResolution": "bundler",
-    "baseUrl": ".",
-    "paths": {
-      "@/*": [
-        "./client/src/*"
-      ],
-      "@shared/*": [
-        "./shared/*"
-      ]
-    }
-  }
+    "babel.config.js",
+    "metro.config.js"
+  ]
 }

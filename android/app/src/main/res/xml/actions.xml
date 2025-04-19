@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actions>
+    <!-- Definiert die von Google Assistant unterstützten App-Actions -->
+    
+    <!-- Lernplan erstellen -->
+    <action intentName="actions.intent.CREATE_LEARNING_PLAN">
+        <fulfillment urlTemplate="https://menschenrechtsverteidiger.app/learning-plan/create{?goal,title}">
+            <parameter-mapping>
+                <parameter name="goal" key="goal" required="true" />
+                <parameter name="title" key="title" required="false" />
+            </parameter-mapping>
+        </fulfillment>
+        <fulfillment 
+            fulfillmentMode="actions.fulfillment.DEEPLINK"
+            urlTemplate="menschenrechtsverteidiger://learning-plan/create{?goal,title}">
+            <parameter-mapping>
+                <parameter name="goal" key="goal" required="true" />
+                <parameter name="title" key="title" required="false" />
+            </parameter-mapping>
+        </fulfillment>
+        <parameter name="goal" type="string" />
+        <parameter name="title" type="string" />
+        <intent-filter>
+            <action name="com.hrdefendermobile.CREATE_LEARNING_PLAN" />
+        </intent-filter>
+    </action>
+    
+    <!-- Lernmodul suchen -->
+    <action intentName="actions.intent.SEARCH_LEARNING_MODULE">
+        <fulfillment urlTemplate="https://menschenrechtsverteidiger.app/learning-module/search{?query}">
+            <parameter-mapping>
+                <parameter name="query" key="query" required="true" />
+            </parameter-mapping>
+        </fulfillment>
+        <fulfillment 
+            fulfillmentMode="actions.fulfillment.DEEPLINK"
+            urlTemplate="menschenrechtsverteidiger://learning-module/search{?query}">
+            <parameter-mapping>
+                <parameter name="query" key="query" required="true" />
+            </parameter-mapping>
+        </fulfillment>
+        <parameter name="query" type="string" />
+        <intent-filter>
+            <action name="com.hrdefendermobile.SEARCH_LEARNING_MODULE" />
+        </intent-filter>
+    </action>
+    
+    <!-- Dokument analysieren -->
+    <action intentName="actions.intent.ANALYZE_DOCUMENT">
+        <fulfillment urlTemplate="https://menschenrechtsverteidiger.app/document/analyze{?documentName}">
+            <parameter-mapping>
+                <parameter name="documentName" key="documentName" required="true" />
+            </parameter-mapping>
+        </fulfillment>
+        <fulfillment 
+            fulfillmentMode="actions.fulfillment.DEEPLINK"
+            urlTemplate="menschenrechtsverteidiger://document/analyze{?documentName}">
+            <parameter-mapping>
+                <parameter name="documentName" key="documentName" required="true" />
+            </parameter-mapping>
+        </fulfillment>
+        <parameter name="documentName" type="string" />
+        <intent-filter>
+            <action name="com.hrdefendermobile.ANALYZE_DOCUMENT" />
+        </intent-filter>
+    </action>
+    
+    <!-- Neuen Fall erstellen -->
+    <action intentName="actions.intent.CREATE_CASE">
+        <fulfillment urlTemplate="https://menschenrechtsverteidiger.app/legal-case/create{?caseTitle,caseDescription}">
+            <parameter-mapping>
+                <parameter name="caseTitle" key="caseTitle" required="true" />
+                <parameter name="caseDescription" key="caseDescription" required="false" />
+            </parameter-mapping>
+        </fulfillment>
+        <fulfillment 
+            fulfillmentMode="actions.fulfillment.DEEPLINK"
+            urlTemplate="menschenrechtsverteidiger://legal-case/create{?caseTitle,caseDescription}">
+            <parameter-mapping>
+                <parameter name="caseTitle" key="caseTitle" required="true" />
+                <parameter name="caseDescription" key="caseDescription" required="false" />
+            </parameter-mapping>
+        </fulfillment>
+        <parameter name="caseTitle" type="string" />
+        <parameter name="caseDescription" type="string" />
+        <intent-filter>
+            <action name="com.hrdefendermobile.CREATE_CASE" />
+        </intent-filter>
+    </action>
+</actions>

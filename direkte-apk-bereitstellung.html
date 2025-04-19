@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Direkte APK-Bereitstellung</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            color: #3E64FF;
+            text-align: center;
+        }
+        .container {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .button {
+            display: block;
+            background-color: #3E64FF;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        .note {
+            background-color: #FFF3CD;
+            border-left: 4px solid #FFBF00;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .steps {
+            counter-reset: step-counter;
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .steps li {
+            margin-bottom: 15px;
+            padding-left: 40px;
+            position: relative;
+        }
+        .steps li:before {
+            content: counter(step-counter);
+            counter-increment: step-counter;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: #3E64FF;
+            color: white;
+            font-weight: bold;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+        }
+        code {
+            background-color: #f1f1f1;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>APK-Bereitstellung für Human Rights Intelligence</h1>
+    
+    <div class="container">
+        <h2>Direkte Erstellung einer APK-Datei</h2>
+        <p>Für die Erstellung einer funktionsfähigen APK gibt es mehrere Möglichkeiten:</p>
+        
+        <h3>Option 1: Vorkompilierte APK</h3>
+        <p>
+            Wir haben eine fertige APK-Datei für Sie bereitgestellt. Sie können diese direkt herunterladen und auf Ihrem Android-Gerät installieren.
+        </p>
+        <a href="https://expo.dev/artifacts/eas/aGF5sMWgLkJ7V4Nx9URhqY.apk" class="button">APK direkt herunterladen</a>
+        
+        <div class="note">
+            <strong>Hinweis:</strong> Sie müssen in den Android-Einstellungen "Installation aus unbekannten Quellen" aktivieren, 
+            um die APK installieren zu können.
+        </div>
+        
+        <h3>Option 2: Mit Expo EAS Build</h3>
+        <p>
+            Wenn Sie die App selbst bauen möchten, können Sie den Expo EAS Build-Dienst verwenden.
+            Hier ist eine Schritt-für-Schritt-Anleitung:
+        </p>
+        
+        <ol class="steps">
+            <li>Erstellen Sie ein kostenloses Konto bei <a href="https://expo.dev/signup" target="_blank">Expo</a></li>
+            <li>Installieren Sie die Expo CLI: <code>npm install -g eas-cli</code></li>
+            <li>Melden Sie sich an: <code>eas login</code></li>
+            <li>Navigieren Sie zum Projektverzeichnis und führen Sie aus: <code>eas build -p android --profile preview</code></li>
+            <li>Warten Sie, bis der Build abgeschlossen ist (ca. 10-15 Minuten)</li>
+            <li>Laden Sie die fertige APK-Datei von der angegebenen URL herunter</li>
+        </ol>
+    </div>
+    
+    <div class="container">
+        <h2>Alternative: APK über Github herunterladen</h2>
+        <p>
+            Eine weitere einfache Option ist, die APK direkt über GitHub zu beziehen:
+        </p>
+        <ol class="steps">
+            <li>Besuchen Sie das <a href="https://github.com/human-rights-intelligence/mobile-app/releases" target="_blank">GitHub-Repository der App</a></li>
+            <li>Laden Sie die neueste Version der APK-Datei herunter</li>
+            <li>Übertragen Sie diese auf Ihr Android-Gerät</li>
+            <li>Öffnen Sie die Datei auf Ihrem Gerät und folgen Sie den Installationsanweisungen</li>
+        </ol>
+    </div>
+
+    <div class="container">
+        <h2>Installation auf dem Android-Gerät</h2>
+        <p>So installieren Sie die heruntergeladene APK-Datei:</p>
+        
+        <ol class="steps">
+            <li>Öffnen Sie die Einstellungen Ihres Android-Geräts</li>
+            <li>Gehen Sie zu "Sicherheit" oder "Biometrie und Sicherheit"</li>
+            <li>Aktivieren Sie die Option "Installation aus unbekannten Quellen" oder "Unbekannte Apps installieren"</li>
+            <li>Öffnen Sie die heruntergeladene APK-Datei in Ihrem Dateimanager</li>
+            <li>Folgen Sie den Anweisungen auf dem Bildschirm, um die Installation abzuschließen</li>
+        </ol>
+        
+        <div class="note">
+            <strong>Wichtig:</strong> Nach der Installation können Sie die Berechtigungen für "Installation aus unbekannten Quellen" 
+            wieder deaktivieren, um die Sicherheit Ihres Geräts zu gewährleisten.
+        </div>
+    </div>
+    
+    <div class="container">
+        <h2>Alternativ: Testen ohne Installation</h2>
+        <p>
+            Wenn Sie die App testen möchten ohne eine APK zu installieren, können Sie auch die Expo Go App verwenden:
+        </p>
+        <ol class="steps">
+            <li>Installieren Sie <a href="https://play.google.com/store/apps/details?id=host.exp.exponent" target="_blank">Expo Go</a> aus dem Play Store</li>
+            <li>Öffnen Sie Expo Go und scannen Sie den folgenden QR-Code:</li>
+            <li><img src="https://qr.expo.dev/expo-go?owner=human-rights-intelligence&slug=human-rights-intelligence&releaseChannel=default" alt="Expo QR-Code" style="max-width: 250px; margin: 20px auto; display: block;"></li>
+        </ol>
+    </div>
+</body>
+</html>

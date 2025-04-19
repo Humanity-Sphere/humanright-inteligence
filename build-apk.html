@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human Rights Intelligence App - APK-Erstellung</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #3E64FF;
+        }
+        .container {
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        code {
+            background-color: #f0f0f0;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+        pre {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        .button {
+            display: inline-block;
+            background-color: #3E64FF;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .button:hover {
+            background-color: #2A4CBF;
+        }
+        .warning {
+            background-color: #FFF3CD;
+            border-left: 4px solid #FFC107;
+            padding: 10px 15px;
+            margin: 15px 0;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+    <h1>Human Rights Intelligence Mobile App</h1>
+    <div class="container">
+        <h2>APK-Erstellung für Android</h2>
+        <p>Diese Anleitung führt Sie durch den Prozess der Erstellung einer installierbaren APK-Datei für Ihre Android-Geräte.</p>
+        
+        <div class="warning">
+            <strong>Hinweis:</strong> Sie benötigen ein kostenloses Expo-Konto und die EAS-CLI, um diesen Prozess abzuschließen.
+        </div>
+
+        <h3>Voraussetzungen</h3>
+        <ul>
+            <li>Ein <a href="https://expo.dev/signup" target="_blank">Expo-Konto</a> (kostenlos)</li>
+            <li>Node.js und npm auf Ihrem Computer</li>
+            <li>EAS-CLI: <code>npm install -g eas-cli</code></li>
+        </ul>
+
+        <h3>Schritt-für-Schritt-Anleitung</h3>
+        
+        <div class="step">
+            <h4>1. Bei Expo anmelden</h4>
+            <pre>eas login</pre>
+            <p>Geben Sie Ihre Expo-Anmeldedaten ein, wenn Sie dazu aufgefordert werden.</p>
+        </div>
+        
+        <div class="step">
+            <h4>2. Projekt konfigurieren (nur bei erstmaliger Ausführung)</h4>
+            <pre>cd mobile-app
+eas build:configure</pre>
+        </div>
+        
+        <div class="step">
+            <h4>3. APK erstellen</h4>
+            <pre>cd mobile-app
+eas build -p android --profile preview</pre>
+            <p>Dieser Prozess kann 10-15 Minuten dauern, da die APK in der Expo-Cloud erstellt wird.</p>
+        </div>
+        
+        <div class="step">
+            <h4>4. APK herunterladen</h4>
+            <p>Nach Abschluss des Build-Prozesses erhalten Sie einen Link zum Herunterladen der APK-Datei. Sie können die APK auch in Ihrem <a href="https://expo.dev" target="_blank">Expo-Dashboard</a> finden.</p>
+        </div>
+        
+        <div class="step">
+            <h4>5. Auf Android-Gerät installieren</h4>
+            <p>Übertragen Sie die APK-Datei auf Ihr Android-Gerät und installieren Sie sie.</p>
+            <ul>
+                <li>Möglicherweise müssen Sie die Installation aus unbekannten Quellen in den Einstellungen aktivieren</li>
+                <li>Navigieren Sie zu Einstellungen > Sicherheit > Unbekannte Quellen</li>
+            </ul>
+        </div>
+        
+        <div class="step">
+            <h4>Alternative: Mit Expo Go testen</h4>
+            <pre>cd mobile-app
+npx expo publish</pre>
+            <p>Nach der Veröffentlichung können Sie die App in der Expo Go App auf Ihrem Mobilgerät unter "Projects" finden.</p>
+        </div>
+        
+        <a href="https://expo.dev" class="button" target="_blank">Zu Expo gehen</a>
+        <a href="BUILD_INSTRUCTIONS.md" class="button">Ausführliche Anweisungen</a>
+    </div>
+    
+    <div class="container">
+        <h2>QR-Code für Expo Go (lokale Entwicklung)</h2>
+        <p>Wenn Sie sich im selben Netzwerk befinden, können Sie auch den QR-Code verwenden, um die App in Expo Go zu öffnen:</p>
+        <pre>cd mobile-app && npx expo start</pre>
+        <p>Der obige Befehl startet einen lokalen Entwicklungsserver und generiert einen QR-Code zum Scannen.</p>
+    </div>
+    
+    <div class="container">
+        <h2>Über das Human Rights Intelligence Projekt</h2>
+        <p>Die Human Rights Intelligence App unterstützt Menschenrechtsverteidiger mit fortschrittlichen KI-gestützten Werkzeugen für Dokumentation, Analyse und Berichterstattung.</p>
+        <p>Funktionen umfassen:</p>
+        <ul>
+            <li>Dokumentenanalyse mit KI-Unterstützung</li>
+            <li>Intelligente Inhaltserstellung</li>
+            <li>Mustererkennungssystem für Menschenrechtsverletzungen</li>
+            <li>Sicherheits- und Zusammenarbeitstools</li>
+            <li>Rechtliche Unterstützung und Bildungsmaterialien</li>
+            <li>Integration mit Smart Glasses</li>
+        </ul>
+    </div>
+</body>
+</html>

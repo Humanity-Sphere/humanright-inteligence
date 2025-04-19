@@ -1,0 +1,62 @@
+// Top-level build file des Android-Projekts
+buildscript {
+    ext {
+        // Build-Konfiguration
+        buildToolsVersion = "34.0.0"
+        minSdkVersion = 21
+        compileSdkVersion = 34
+        targetSdkVersion = 34
+        
+        // React Native Versionen
+        reactNativeVersion = "0.73.4"
+        
+        // Kotlin-Version
+        kotlinVersion = "1.8.0"
+        
+        // Android-Bibliotheken
+        androidXVersion = "1.6.0"
+        androidXAnnotationVersion = "1.6.0"
+        androidXAppCompatVersion = "1.6.1"
+        androidXCoreKtxVersion = "1.12.0"
+        androidXSwipeRefreshLayoutVersion = "1.1.0"
+        androidXRecyclerViewVersion = "1.3.2"
+        
+        // Google-Bibliotheken
+        agpVersion = "7.4.2"
+        junitVersion = "4.13.2"
+    }
+    
+    repositories {
+        google()
+        mavenCentral()
+    }
+    
+    dependencies {
+        // Android Gradle Plugin
+        classpath "com.android.tools.build:gradle:${agpVersion}"
+        
+        // Zusätzliche Build-Dependencies
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
+    }
+}
+
+// Plugins für alle Projekte
+allprojects {
+    repositories {
+        maven {
+            // React Native Android Abhängigkeiten
+            url("$rootDir/../node_modules/react-native/android")
+        }
+        maven {
+            // JitPack Repository für GitHub-Projekte
+            url "https://jitpack.io"
+        }
+        mavenCentral()
+        google()
+    }
+}
+
+// Task zum Löschen des Build-Verzeichnisses
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

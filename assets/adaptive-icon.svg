@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1024" height="1024" fill="#3E64FF"/>
+  <path d="M512 256C370.6 256 256 370.6 256 512C256 653.4 370.6 768 512 768C653.4 768 768 653.4 768 512C768 370.6 653.4 256 512 256ZM512 320C618.5 320 704 405.5 704 512C704 618.5 618.5 704 512 704C405.5 704 320 618.5 320 512C320 405.5 405.5 320 512 320Z" fill="white"/>
+  <path d="M480 416H544V544H480V416Z" fill="white"/>
+  <path d="M480 576H544V640H480V576Z" fill="white"/>
+  <path d="M384 480H640V544H384V480Z" fill="white"/>
+</svg>

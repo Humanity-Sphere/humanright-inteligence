@@ -1,191 +1,76 @@
-# humanright-inteligence
+# Human Rights Intelligence Mobile App
 
-# Human Rights Intelligence App
+## Übersicht
 
-Eine fortschrittliche KI-gestützte Plattform zur Dokumentation, Analyse und zum Schutz von Menschenrechten mit zentraler KI-Steuerung.
+Diese mobile Anwendung ist Teil der Human Rights Intelligence Plattform, die für Menschenrechtsverteidiger entwickelt wurde. Sie bietet sichere und intelligente Funktionen für die Dokumentation, Analyse und den Schutz von sensiblen Informationen.
 
-## Plattformübersicht (Aktualisiert: April 2025)
+## Funktionen
 
-Dieses Projekt ist eine integrierte Lösung für Menschenrechtsverteidiger und bietet erweiterte Werkzeuge für:
+- Sichere Dokumentenverwaltung
+- Persönliches Journal/Tagebuch
+- Kontextabhängige Sicherheitsempfehlungen
+- KI-gestützte Analyse und Unterstützung
+- Unterstützung für den Offline-Modus
+- Globaler KI-Assistent
+- Integration mit der Web-Plattform
 
-- Sichere Dokumentenverwaltung und KI-gestützte Analyse
-- Zentrale Boss-KI für intelligente Aufgabenkoordination und Nutzerinteraktion
-- Multi-Agenten-System mit spezialisierter Aufgabenteilung
-- Interaktives ContentStudio mit Whiteboard-Funktionalität
-- Umfassendes Knowledge Management System
-- Erweiterte Mehrsprachige Benutzeroberfläche mit 45+ Sprachen
-- Verbesserte Mobile App für Feldarbeit mit Offline-KI-Funktionen
-- Self-Repair und Self-Learning Funktionen
-- Umfassende Cross-Platform-Unterstützung (Web, Desktop, Mobile)
+## Technologie-Stack
 
-## Zentrale Boss-KI-Architektur
+- React Native (mit Expo)
+- TypeScript
+- Mehrsprachige Unterstützung (Deutsch/Englisch)
+- Lokale Datenverschlüsselung
+- Integration verschiedener KI-Dienste (OpenAI, Google Gemini, Claude)
 
-Das Herzstück der Human Rights Intelligence App ist die zentrale Boss-KI, die als Hauptkoordinator fungiert:
+## Entwicklung
 
-- **Zentrale Schnittstelle**: Der Nutzer interagiert primär mit einer übergeordneten KI-Entität
-- **Intelligente Aufgabenverteilung**: Analysiert den Kontext und weist Aufgaben an spezialisierte Agenten zu
-- **Koordination von Agentengruppen**: Orchestriert komplexe Workflows über mehrere Agenten hinweg
-- **Konsistente Nutzererfahrung**: Liefert einheitliche Antworten aus multiplen Quellen
-- **Personalisierte Interaktion**: Lernt kontinuierlich aus Nutzerinteraktionen
-- **Voice-First-Onboarding**: Führt neue Nutzer mit natürlicher Sprache durch die Einrichtung
+### Voraussetzungen
 
-## Komponenten
+- Node.js (v18+)
+- npm oder yarn
+- Expo CLI
+- Ein Expo-Konto für die Entwicklung und den Build-Prozess
 
-### 1. Server & KI-Backend
+### Lokale Entwicklung
 
-Der Server bildet das Herzstück der Anwendung und bietet:
-- REST-API für alle Plattformkomponenten
-- Multi-Modell-KI-Integration (Google Gemini 1.5, Groq, OpenAI)
-- KI-Agenten-Management und Koordination
-- Authentifizierung und differenzierte Berechtigungsverwaltung
-- Verteilte Datenverarbeitung und -analyse
+1. Abhängigkeiten installieren:
+   ```bash
+   npm install
+   ```
 
-**Technologien**: Node.js, Express, MongoDB, Neo4j, Archon Framework
+2. Entwicklungsserver starten:
+   ```bash
+   npx expo start
+   ```
 
-### 2. Client (Web & Desktop-Frontend)
+3. QR-Code scannen mit der Expo Go App auf Ihrem Mobilgerät:
+   ```bash
+   node qr-generator.js
+   ```
 
-Die Web- und Desktop-Oberfläche ermöglicht:
-- Interaktive Dokumentenanalyse und -verwaltung
-- Voice-gesteuerte Benutzeroberfläche über MCP-Protokoll
-- ContentStudio mit Whiteboard-Funktionalität
-- Agent Flow Builder zur visuellen Erstellung von KI-Workflows
-- Fortgeschrittene Suchfunktionen mit semantischen Erweiterungen
-- Personalisierte Dashboards mit KI-generierten Erkenntnissen
+### APK erstellen
 
-**Technologien**: React, TypeScript, Tailwind CSS, Electron, ReactFlow
+Für die Erstellung einer installierbaren Android-APK:
 
-### 3. Mobile App mit erweiterter Funktionalität
+1. Führen Sie das Build-Skript aus:
+   ```bash
+   ./app-build.sh
+   ```
 
-Die mobile Anwendung bietet:
-- Umfassende Offline-Funktionalität mit lokaler KI-Verarbeitung
-- Verbesserte Sicherheitsmechanismen mit biometrischer Authentifizierung
-- Intelligente Synchronisation mit priorisierter Datenübertragung
-- Erweiterte Feldforschungsfunktionen mit GPS-Integration
-- Voice Assistant für handfreie Dokumentation
+2. Die APK wird über den Expo-Dienst erstellt (erfordert ein Expo-Konto).
 
-**Technologien**: React Native, Expo, SQLite, TensorFlow Lite
+3. Der Fortschritt und der Download-Link sind im Expo-Dashboard verfügbar.
 
-### 4. Self-Care & Self-Repair Komponenten
+**Alternative:** Detaillierte Anweisungen finden Sie in der `EXPO_APK_ANLEITUNG.md` Datei.
 
-Die Selbstpflege-Funktionen umfassen:
-- Automatische Problemerkennung und -behebung
-- Kontinuierliche Leistungsoptimierung
-- Self-Learning aus Nutzerinteraktionen
-- Automatische Updates kritischer Komponenten
-- System-Selfcare für präventive Wartung
+## Offline-Funktionalität
 
-**Technologien**: Eigenentwickelte Reparatur-Agenten, Diagnostik-Framework
+Die App ist für den Einsatz in Regionen mit eingeschränkter Internetverbindung konzipiert. Wichtige Funktionen wie Journal-Einträge und Dokumentenverwaltung sind auch offline verfügbar.
 
-## Erweiterte KI-Funktionen
+## Sicherheit
 
-- **Zentrale Boss-KI**: Intelligenter Systemkoordinator für alle Nutzerinteraktionen
-- **Multi-Agenten-Orchestrierung**: Verteilte Aufgabenbearbeitung durch spezialisierte Agenten
-- **Fortschrittliche Dokumentenanalyse**: Tiefgehende Kontextanalyse mit Multi-Modell-Validierung
-- **Intelligente Mustererkennung**: Identifikation komplexer Zusammenhänge mit Kausalitätsanalyse
-- **Umfassende mehrsprachige Unterstützung**: Verbesserte Übersetzung und kulturell angepasste Analyse
-- **Self-Learning**: Kontinuierliche Verbesserung durch Feedback-Schleifen
-- **Interaktives ContentStudio**: KI-unterstützte Whiteboard-Funktionen und Dokumentverknüpfung
-- **Knowledge Management System**: Dynamische Wissensdatenbank mit Self-Learning
+Alle sensiblen Daten werden lokal auf dem Gerät verschlüsselt gespeichert. Die Anwendung verwendet moderne Sicherheitsstandards, um die Vertraulichkeit der Daten zu gewährleisten.
 
-## Installation und Start
+## Kontakt
 
-### Komplette Plattform einrichten
-
-```bash
-# Alle Abhängigkeiten für alle Plattformen installieren
-sh setup-all-platforms.sh
-
-# Komplettes Build für alle Plattformen starten
-sh build-all-platforms.sh
-```
-
-### Nur Webversion starten
-
-```bash
-npm run dev
-```
-
-### Deployment auf Replit
-
-Für das Deployment in der Replit-Umgebung:
-
-```bash
-# Deployment-Server starten (speziell optimiert für Replit)
-node scripts/fixed-deploy-server.js
-```
-
-**Wichtig:** Bei Deployment-Problemen wegen Port-Konflikten (mehrere externe Ports statt nur Port 80), bitte die Datei `DEPLOYMENT-GUIDE.md` konsultieren. Wir haben einen speziellen Server erstellt, der nur auf Port 5000 läuft, um das Deployment-Problem zu beheben.
-
-### Mobile App entwickeln
-
-```bash
-cd mobile-app
-npm start
-```
-
-Scannen Sie den generierten QR-Code mit der Expo Go App, um die Anwendung auf Ihrem Gerät zu testen.
-
-### APK für Android erstellen
-
-```bash
-cd mobile-app
-sh ../build-mobile-apk.sh
-```
-
-### Desktop-Anwendung starten
-
-Unter Windows:
-```
-start-desktop-app.bat
-```
-
-Unter Linux/Mac:
-```
-sh start-desktop-app.sh
-```
-
-## Datensicherheit
-
-Die Plattform bietet mehrere Sicherheitsebenen:
-- Verschlüsselte Datenspeicherung
-- Rollenbasierte Zugangskontrollen
-- Lokale Datenspeicherung für sensible Informationen
-- Verschlüsselte Übertragung zwischen Komponenten
-
-## Uwazi-Integration
-
-Die Plattform unterstützt die Integration mit dem Uwazi-Dokumentenmanagementsystem:
-- Direkter Dokumentenaustausch
-- Synchronisierung von Metadaten
-- Gemeinsame Analyseergebnisse
-
-## Unterstützte Sprachen
-
-Die Anwendung unterstützt mehrere Sprachen, darunter:
-- Deutsch
-- Englisch
-- Französisch
-- Spanisch
-- Arabisch
-
-## Systemanforderungen
-
-- **Server**: Node.js 16+, MongoDB 5+
-- **Web-Client**: Moderner Browser (Chrome, Firefox, Safari, Edge)
-- **Mobile App**: Android 9+ oder iOS 13+
-- **Desktop-App**: Windows 10/11, macOS 10.14+, Linux
-
-## Lizenz
-
-Dieses Projekt ist urheberrechtlich geschützt. Alle Rechte vorbehalten.
-
-### Deployment auf Replit
-
-Für das Deployment in der Replit-Umgebung:
-
-```bash
-# Deployment-Server starten (speziell optimiert für Replit)
-node scripts/fixed-deploy-server.js
-```
-
-**Wichtig:** Bei Deployment-Problemen wegen Port-Konflikten (mehrere externe Ports statt nur Port 80), wurde ein spezieller Server erstellt, der nur auf Port 5000 läuft, um das Deployment-Problem zu beheben.
+Bei Fragen oder Problemen mit der mobilen Anwendung wenden Sie sich bitte an das Entwicklungsteam.

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human Rights Intelligence - Mobile App Installation</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f7f9fc;
+        }
+        
+        h1, h2, h3, h4 {
+            color: #3E64FF;
+        }
+        
+        .logo {
+            display: block;
+            margin: 20px auto;
+            max-width: 150px;
+            height: auto;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .method {
+            border-left: 4px solid #3E64FF;
+            padding-left: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .method-title {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .method-title span {
+            background: #3E64FF;
+            color: white;
+            width: 30px;
+            height: 30px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        
+        .steps {
+            list-style-type: none;
+            padding-left: 15px;
+        }
+        
+        .steps li {
+            margin-bottom: 15px;
+            position: relative;
+        }
+        
+        .steps li::before {
+            content: "✓";
+            color: #3E64FF;
+            position: absolute;
+            left: -20px;
+            font-weight: bold;
+        }
+        
+        code {
+            background-color: #f1f5f9;
+            padding: 3px 6px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+        }
+        
+        .code-block {
+            background-color: #f1f5f9;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 15px 0;
+            font-family: 'Courier New', monospace;
+            white-space: pre-wrap;
+            font-size: 14px;
+            overflow-x: auto;
+        }
+        
+        .note {
+            background-color: #fffde7;
+            border-left: 4px solid #fbc02d;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 0 4px 4px 0;
+        }
+        
+        .tip {
+            background-color: #e8f5e9;
+            border-left: 4px solid #4caf50;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 0 4px 4px 0;
+        }
+        
+        .button {
+            display: inline-block;
+            background-color: #3E64FF;
+            color: white;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            font-weight: 600;
+            margin-top: 15px;
+            transition: background-color 0.2s;
+        }
+        
+        .button:hover {
+            background-color: #2a4ad3;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+        }
+        
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        
+        th, td {
+            text-align: left;
+            padding: 12px;
+        }
+        
+        th {
+            background-color: #f1f5f9;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f9fafc;
+        }
+        
+        .feature-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .feature-item {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            display: flex;
+            align-items: center;
+        }
+        
+        .feature-icon {
+            width: 40px;
+            height: 40px;
+            background: #e8eeff;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 15px;
+            color: #3E64FF;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="text-align: center;">Human Rights Intelligence</h1>
+        <h2 style="text-align: center; color: #666;">Mobile App Installation</h2>
+        
+        <p style="text-align: center;">
+            Diese Anleitung führt Sie durch den Prozess, die vollständige Human Rights Intelligence Mobile App auf Ihrem Android-Gerät zu installieren und zu verwenden.
+        </p>
+    </div>
+    
+    <div class="container">
+        <h2>3 Wege zum Testen der App</h2>
+        
+        <div class="method">
+            <div class="method-title"><span>1</span>APK über Expo erstellen (empfohlen)</div>
+            <p>
+                Dies ist die empfohlene Methode, da sie eine vollständige, eigenständige APK erstellt, die alle Funktionen enthält und mit dem Backend kommunizieren kann.
+            </p>
+            <ol class="steps">
+                <li>Erstellen Sie ein kostenloses Konto bei <a href="https://expo.dev/signup" target="_blank">Expo</a></li>
+                <li>Installieren Sie die Expo CLI mit <code>npm install -g eas-cli</code></li>
+                <li>Klonen Sie dieses Repository auf Ihren Computer</li>
+                <li>Öffnen Sie ein Terminal im mobile-app Verzeichnis</li>
+                <li>Melden Sie sich mit <code>eas login</code> an</li>
+                <li>Führen Sie <code>node expo-tools/create-expo-app.js</code> aus, um alle Konfigurationsdateien zu erstellen</li>
+                <li>Starten Sie den Build-Prozess mit <code>eas build -p android --profile preview</code></li>
+                <li>Nach Abschluss des Builds (10-15 Minuten) erhalten Sie einen Link zum Herunterladen der APK</li>
+                <li>Übertragen Sie die APK auf Ihr Android-Gerät und installieren Sie sie</li>
+            </ol>
+            <div class="code-block">cd mobile-app
+node expo-tools/create-expo-app.js
+eas login
+eas build -p android --profile preview</div>
+        </div>
+        
+        <div class="method">
+            <div class="method-title"><span>2</span>Direkt mit Expo Go testen</div>
+            <p>
+                Mit dieser Methode können Sie die App schnell testen, aber Sie benötigen die Expo Go App, und einige Funktionen könnten eingeschränkt sein.
+            </p>
+            <ol class="steps">
+                <li>Installieren Sie die Expo Go App aus dem <a href="https://play.google.com/store/apps/details?id=host.exp.exponent" target="_blank">Play Store</a> oder <a href="https://apps.apple.com/app/expo-go/id982107779" target="_blank">App Store</a></li>
+                <li>Klonen Sie dieses Repository auf Ihren Computer</li>
+                <li>Öffnen Sie ein Terminal im mobile-app Verzeichnis</li>
+                <li>Führen Sie <code>npm install</code> aus, um alle Abhängigkeiten zu installieren</li>
+                <li>Führen Sie <code>node expo-tools/create-expo-app.js</code> aus, um alle Konfigurationsdateien zu erstellen</li>
+                <li>Starten Sie die App mit <code>npx expo start</code></li>
+                <li>Scannen Sie den QR-Code mit der Expo Go App (stellen Sie sicher, dass beide Geräte im selben WLAN-Netzwerk sind)</li>
+            </ol>
+            <div class="code-block">cd mobile-app
+npm install
+node expo-tools/create-expo-app.js
+npx expo start</div>
+        </div>
+        
+        <div class="method">
+            <div class="method-title"><span>3</span>Expo Snack (schnellste Option)</div>
+            <p>
+                Mit Expo Snack können Sie die App direkt im Browser testen, aber die Funktionalität ist eingeschränkt und die Verbindung zum Backend fehlt.
+            </p>
+            <ol class="steps">
+                <li>Besuchen Sie <a href="https://snack.expo.dev/" target="_blank">Expo Snack</a> im Browser</li>
+                <li>Klicken Sie auf "Import from GitHub" und geben Sie Ihre Repository-URL ein (oder laden Sie das Projekt als ZIP herunter und importieren Sie es)</li>
+                <li>Klicken Sie auf "My Device" und scannen Sie den QR-Code mit der Expo Go App</li>
+                <li>Alternativ können Sie die App direkt im Browser-Emulator testen</li>
+            </ol>
+            <p>
+                Die Expo Snack Version hat eingeschränkte Funktionalität und keine Verbindung zum Backend.
+            </p>
+        </div>
+    </div>
+    
+    <div class="container">
+        <h2>Funktionen der mobilen App</h2>
+        <div class="feature-list">
+            <div class="feature-item">
+                <div class="feature-icon">📊</div>
+                <div>Dokumentenanalyse</div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">🔍</div>
+                <div>Mustererkennung</div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">🛡️</div>
+                <div>Rechtliche Unterstützung</div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">📝</div>
+                <div>Kampagnenplanung</div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">🎓</div>
+                <div>Bildungsmaterialien</div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">👓</div>
+                <div>Smart Glass Integration</div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">🔊</div>
+                <div>Sprachsteuerung</div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">📱</div>
+                <div>Offlinemodus</div>
+            </div>
+        </div>
+        
+        <div class="tip">
+            <strong>Tipp:</strong> Die mobile App ist mit dem Backend verbunden und bietet vollen Zugriff auf alle Funktionen.
+        </div>
+    </div>
+    
+    <div class="container">
+        <h2>Anforderungen und Kompatibilität</h2>
+        <table>
+            <tr>
+                <th>Komponente</th>
+                <th>Anforderung</th>
+            </tr>
+            <tr>
+                <td>Android Version</td>
+                <td>Android 6.0 (Marshmallow) oder höher</td>
+            </tr>
+            <tr>
+                <td>iOS Version</td>
+                <td>iOS 12.0 oder höher</td>
+            </tr>
+            <tr>
+                <td>Speicherplatz</td>
+                <td>Mindestens 100 MB freier Speicherplatz</td>
+            </tr>
+            <tr>
+                <td>RAM</td>
+                <td>Mindestens 2 GB für optimale Leistung</td>
+            </tr>
+            <tr>
+                <td>Internet</td>
+                <td>Für volle Funktionalität erforderlich, Offline-Modus verfügbar</td>
+            </tr>
+            <tr>
+                <td>Berechtigungen</td>
+                <td>Kamera, Mikrofon, Speicher (für Dokumentenaufnahme und -speicherung)</td>
+            </tr>
+        </table>
+    </div>
+    
+    <div class="container">
+        <h2>Fehlerbehebung</h2>
+        <div class="note">
+            <strong>Probleme mit der Installation?</strong><br>
+            Wenn Sie Probleme bei der Installation oder Ausführung der App haben, versuchen Sie folgendes:
+        </div>
+        <ol>
+            <li>Stellen Sie sicher, dass Ihr Gerät die Mindestanforderungen erfüllt</li>
+            <li>Aktivieren Sie "Installation aus unbekannten Quellen" in den Android-Einstellungen</li>
+            <li>Prüfen Sie, ob alle erforderlichen Berechtigungen gewährt wurden</li>
+            <li>Bei Verbindungsproblemen:
+                <ul>
+                    <li>Überprüfen Sie Ihre Internetverbindung</li>
+                    <li>Stellen Sie sicher, dass der Backend-Server läuft und erreichbar ist</li>
+                    <li>Prüfen Sie die API-URL in der App-Konfiguration</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+    
+    <div class="container" style="text-align: center;">
+        <h2>Bereit zum Testen?</h2>
+        <p>Wählen Sie die für Sie am besten geeignete Installationsmethode und beginnen Sie, die Human Rights Intelligence App zu nutzen.</p>
+        <p>
+            <a href="https://expo.dev/signup" class="button" target="_blank">Expo-Konto erstellen</a>
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HR Defender</string>
+    
+    <!-- App Actions Strings -->
+    <string name="action_create_learning_plan">Lernplan erstellen</string>
+    <string name="action_search_module">Lernmodul suchen</string>
+    <string name="action_analyze_document">Dokument analysieren</string>
+    <string name="action_create_case">Rechtlichen Fall erstellen</string>
+    
+    <!-- Assistant Feature Descriptions -->
+    <string name="assistant_feature_learning">Sprachgesteuerte Lernpläne und Bildungsinhalte</string>
+    <string name="assistant_feature_document">Einfache Dokumentenanalyse per Sprachbefehl</string>
+    <string name="assistant_feature_cases">Rechtliche Fallverwaltung mit dem Google Assistant</string>
+    
+    <!-- Generic Messages -->
+    <string name="loading">Wird geladen...</string>
+    <string name="error_general">Ein Fehler ist aufgetreten. Bitte versuchen Sie es später erneut.</string>
+    <string name="error_network">Netzwerkfehler. Bitte überprüfen Sie Ihre Internetverbindung.</string>
+    <string name="success">Erfolg!</string>
+</resources>
