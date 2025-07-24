@@ -4,11 +4,11 @@ import { storage } from "./storage";
 import { generateContent, analyzeDocument, detectPatterns } from "./services/gemini";
 import { registerUwaziRoutes } from "./routes/uwazi";
 import { 
-  insertUserSchema,
-  insertDocumentSchema,
-  insertCampaignSchema,
-  insertContentSchema,
-  insertActivitySchema,
+  insertContentSchema, 
+  insertDocumentSchema, 
+  insertCampaignSchema, 
+  insertActivitySchema, 
+  insertUserSchema, 
   insertDocumentAnalysisSchema,
   insertPatternSchema,
   insertKnowledgeContextSchema
@@ -60,23 +60,31 @@ export async function registerRoutes(app: Express): Promise<Server> {
     clientSecret: process.env.GOOGLE_CLIENT_SECRET || "",
     callbackURL: "/api/auth/google/callback",
     proxy: true,
+    // Überprüfe und aktualisiere die Callback-URL für Replit
     passReqToCallback: true
   }, async (req, accessToken, refreshToken, profile, done) => {
+    // Protokolliere die aktuelle Anfrage-URL für Debugging
     console.log("[AUTH] Aktuelle Request-Basis-URL:", `${req.protocol}://${req.get('host')}`);
     
     try {
+      // Prüfen, ob Benutzer bereits existiert
       let user = await storage.getUserByGoogleId(profile.id);
       
       if (!user) {
+        // Wenn kein Benutzer gefunden wurde, erstelle einen neuen
         const email = profile.emails && profile.emails[0] ? profile.emails[0].value : "";
+        
+        // Prüfen, ob Email bereits existiert
         const existingUserWithEmail = await storage.getUserByEmail(email);
         
         if (existingUserWithEmail) {
+          // Verknüpfe bestehenden Benutzer mit Google-ID
           user = await storage.updateUser(existingUserWithEmail.id, {
             googleId: profile.id,
             authProvider: "google"
           });
         } else {
+          // Erstelle neuen Benutzer
           user = await storage.createUser({
             username: profile.displayName.toLowerCase().replace(/\s+/g, '_') + '_' + Math.floor(Math.random() * 1000),
             email: email,
@@ -104,6 +112,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
   // Auth routes
   app.post("/api/auth/register", async (req: Request, res: Response) => {
     try {
+      // Validate request body
       const result = registerSchema.safeParse(req.body);
       if (!result.success) {
         return res.status(400).json({ 
@@ -114,6 +123,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
       const { confirmPassword, ...userData } = result.data;
       
+      // Check if username or email already exists
       const existingUsername = await storage.getUserByUsername(userData.username);
       if (existingUsername) {
         return res.status(400).json({ error: "Benutzername ist bereits vergeben" });
@@ -124,9 +134,13 @@ export async function registerRoutes(app: Express): Promise<Server> {
         return res.status(400).json({ error: "E-Mail-Adresse ist bereits registriert" });
       }
       
+      // Create user
       const user = await storage.createUser(userData);
+      
+      // Set session
       req.session.userId = user.id;
       
+      // Return user without password
       const { password, ...userWithoutPassword } = user;
       res.status(201).json(userWithoutPassword);
     } catch (error) {
@@ -137,6 +151,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
   
   app.post("/api/auth/login", async (req: Request, res: Response) => {
     try {
+      // Validate request body
       const result = loginSchema.safeParse(req.body);
       if (!result.success) {
         return res.status(400).json({ 
@@ -146,12 +161,17 @@ export async function registerRoutes(app: Express): Promise<Server> {
       }
       
       const { username, password } = result.data;
+      
+      // Authenticate user
       const user = await storage.authenticateUser(username, password);
       if (!user) {
         return res.status(401).json({ error: "Ungültiger Benutzername oder Passwort" });
       }
       
+      // Set session
       req.session.userId = user.id;
+      
+      // Return user without password
       const { password: userPassword, ...userWithoutPassword } = user;
       res.json(userWithoutPassword);
     } catch (error) {
@@ -159,6 +179,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
   
+  // Google Auth Routen
   app.get("/api/auth/google", (req: Request, res: Response, next: NextFunction) => {
     console.log("[AUTH] Google OAuth Anfrage gestartet");
     passport.authenticate("google", {
@@ -169,15 +190,18 @@ export async function registerRoutes(app: Express): Promise<Server> {
   app.get("/api/auth/google/callback", 
     (req: Request, res: Response, next: NextFunction) => {
       console.log("[AUTH] Google OAuth Callback erhalten");
+      
       passport.authenticate("google", { 
         failureRedirect: "/login?error=google_auth_failed" 
       })(req, res, next);
     },
     (req: Request, res: Response) => {
+      // Nach erfolgreicher Authentifizierung zur App weiterleiten
       if (req.user) {
         console.log("[AUTH] Benutzer erfolgreich authentifiziert:", (req.user as any).id);
         req.session.userId = (req.user as any).id;
         
+        // Session speichern
         req.session.save((err) => {
           if (err) {
             console.error("[AUTH] Fehler beim Speichern der Session:", err);
@@ -192,7 +216,10 @@ export async function registerRoutes(app: Express): Promise<Server> {
   );
   
   app.post("/api/auth/logout", (req: Request, res: Response) => {
+    // Clear session
     req.session.userId = undefined;
+    
+    // Wenn Passport verwendet wird
     if (req.logout) {
       req.logout(err => {
         if (err) {
@@ -200,9 +227,10 @@ export async function registerRoutes(app: Express): Promise<Server> {
         }
       });
     }
+    
     res.json({ success: true });
   });
-
+  
   // User routes
   app.get("/api/user/current", async (req: Request, res: Response) => {
     try {
@@ -364,7 +392,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       const userId = 1;
       const contents = await storage.getContents(userId);
       res.json(contents);
-    } catch (error)
+    } catch (error) {
       res.status(500).json({ error: "Failed to get content" });
     }
   });
